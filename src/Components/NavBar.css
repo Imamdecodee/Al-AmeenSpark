@@ -16,6 +16,9 @@
     align-items: center;
     justify-content: space-between;
 }
+.nav-pages{
+    width: 40%;
+}
 .page-link{
     margin-left: 3rem;
     text-decoration: none;
@@ -27,7 +30,7 @@
     color: #e9cab4;
 }
 .logo{
-    width: 3.5rem;
+    width: 8rem;
 }
 
 

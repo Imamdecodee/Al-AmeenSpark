@@ -32,9 +32,73 @@
     outline-color: white;
 }
 .ameen{
-    font-size: 6rem;
+    font-size: 5rem;
     padding: 0;
     margin: 0;
-    margin-bottom: -1rem;
+    margin-top: 2rem;
+    text-align: center;
+    text-wrap: nowrap;
     
+}
+
+.help-sec{
+    margin-top: 4rem;
+}
+.help{
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+.help-para{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 4rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:1000px) {
+    .welcome{
+        font-size: 2rem;
+    }
+    .ameen{
+        font-size: 4rem;
+        width: 90%;
+        text-wrap: nowrap;
+    }
+    .help{
+        font-size: 2rem;
+    }
+    .help-para{
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width:580px) {
+    .welcome{
+        font-size: 2rem;
+    }
+    .ameen{
+        font-size: 3rem;
+        width: 90%;
+        text-wrap: nowrap;
+    }
+}
+
+
+
+@media (max-width:418px) {
+   
 }
