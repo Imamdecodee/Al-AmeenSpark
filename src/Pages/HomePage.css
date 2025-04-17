@@ -1,0 +1,40 @@
+
+.header{
+    width: 100vw;
+    height: 90vh;
+    background-image: url(/src/assets/Images/Hero.jpg);
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.678);
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    display: flex; align-items: center; justify-content: center;
+
+}
+
+.hero-cont{
+    color: white;
+    width: 70%;
+    height: 90%;
+    display: flex; align-items: center; justify-content: center;
+    flex-direction: column;
+
+}
+.welcome{
+    font-size: 3rem;
+    font-family: monospace;
+    padding: 0;
+    margin: 0;
+    margin-top: -2rem;
+    padding: 0px 1rem;
+    color:  white;
+    outline-style: solid;
+    outline-color: white;
+}
+.ameen{
+    font-size: 6rem;
+    padding: 0;
+    margin: 0;
+    margin-bottom: -1rem;
+    
+}

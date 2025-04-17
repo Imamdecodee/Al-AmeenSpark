@@ -1,0 +1,49 @@
+.nav-bar{
+    width: 100vw;
+    height: 4rem;
+    background-color: #8b4513;
+    box-shadow: 0px 0px 8px rgb(189, 189, 189);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+
+}
+.nav-content{
+    width: 93%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.page-link{
+    margin-left: 3rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+.page-link:hover{
+    color: #e9cab4;
+}
+.logo{
+    width: 3.5rem;
+}
+
+
+.request-btn{
+    text-wrap: nowrap;
+    color: #8b4513;
+    width: 6.5rem;
+    height: 2.4rem;
+    background-color: white;
+    border-radius: 0.2rem;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 8px rgb(189, 189, 189);
+}
+.request-btn:hover{
+    background-color: #d4c4b8;
+    cursor: pointer;
+    color: white;
+}
