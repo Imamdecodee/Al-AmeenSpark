@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import NavBar from '../Components/NavBar'
+import Footer from '../Components/Footer';
 import '../Pages/ServicePage.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
@@ -29,6 +30,7 @@ const ServicePage = () => {
         </div>
 
     </main>
+    <Footer />
     </section>
   )
 }

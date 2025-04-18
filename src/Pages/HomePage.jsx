@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import './HomePage.css'
 import NavBar from '../Components/NavBar'
+import Footer from '../Components/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 
@@ -25,7 +26,7 @@ const HomePage = () => {
       </div>
 
     </main>
-
+     <Footer />
     </section>
   )
 }
