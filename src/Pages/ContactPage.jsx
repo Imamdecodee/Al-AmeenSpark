@@ -34,7 +34,7 @@ const ContactPage = () => {
           <div className='message'>
             <input type="text"placeholder='Your Name:' />
             <input type="email"placeholder='Your Email:' />
-            <input type="message"placeholder='Your Message:' />
+            <input className='write-message' type="message"placeholder='Your Message:' />
             <button className='submit-btn'> Submitt</button>
           </div>
           <div className='message'>hjjhbbb</div>

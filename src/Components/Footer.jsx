@@ -30,11 +30,11 @@ const Footer = () => {
          collaboratively to deliver innovative,
          value-driven solutions</p>
          <div className='icon'>
-         <FaFacebookSquare />
-         <FaTwitterSquare />
-         <FaGoogle />
-         <FaInstagramSquare />
-         <FaLinkedin />
+           <Link class="page-link" to="/https://www.facebook.com/share/1DXsaJPc1c/">  <FaFacebookSquare /></Link>
+           <Link class="page-link" to="/https://www.facebook.com/share/1DXsaJPc1c/">    <FaTwitterSquare /> </Link>
+           <Link class="page-link" to="/https://www.facebook.com/share/1DXsaJPc1c/">      <FaGoogle />    </Link>
+           <Link class="page-link" to="/https://www.facebook.com/share/1DXsaJPc1c/">    <FaInstagramSquare />  </Link>
+           <Link class="page-link" to="/https://www.facebook.com/share/1DXsaJPc1c/">      <FaLinkedin />   </Link>
          </div>
       </div>
       <div className='company-div'>
@@ -43,7 +43,7 @@ const Footer = () => {
         <p>About</p>
         <p>Services</p>
         <p>Contact</p>
-      </div>
+      </div>s
       <div className='Bussiness-div'>
         <h1>Business</h1>
         <p>Project</p>
