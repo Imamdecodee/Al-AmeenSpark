@@ -11,8 +11,13 @@
     padding: 0px 35px;
 }
 .Logo-footer{
+
     width: 8vw;
     padding: 10px;
+
+    margin-top: 1rem;
+    width: 8vw;
+
 }
 .Logo-footer-text{
     font-size: 17px;
@@ -32,6 +37,10 @@
     justify-content: center;
     gap: 5px;
     margin-top: -15px;
+}
+.copyright{
+    font-size: 0.9rem;
+    padding-bottom: 1rem;
 }
 
 

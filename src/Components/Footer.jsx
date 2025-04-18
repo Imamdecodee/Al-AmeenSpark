@@ -43,7 +43,7 @@ const Footer = () => {
         <p>About</p>
         <p>Services</p>
         <p>Contact</p>
-      </div>s
+      </div>
       <div className='Bussiness-div'>
         <h1>Business</h1>
         <p>Project</p>
@@ -76,7 +76,7 @@ const Footer = () => {
     </div>
     <div className='copyright'>
       <hr />
-      <p> Copyright @ 2025 Al-Ameen-Spark | Powered by The-Techies</p>
+      <p className='copyright'> Copyright @ 2025 Al-Ameen-Spark | Powered by The-Techies</p>
     </div>
     </div>
    

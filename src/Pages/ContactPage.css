@@ -50,6 +50,10 @@
     gap: 5px;
     margin-top: -15px;
 }
+.info-icon{
+    color: #a35f2e;
+    width: 1.5rem;
+}
 .Reach-us{
     display: flex;
     flex-direction: column;
@@ -61,6 +65,23 @@
     flex-direction: column;
     justify-content: flex-start;
 }
+.contact-info>h6{
+    font-size: 0.9rem;
+    font-family: monospace;
+    color: #8b4513;
+    padding: 0;
+    margin: 0;
+}
+.contact-info>h1{
+    letter-spacing: 0.1rem;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+
+
 .message{
     width: 30vw;
     height: 50vh;
@@ -88,26 +109,27 @@
 .message>input{
     width: 21vw;
     height: 5vh;
+    outline: none;
+    border: none;
     border-radius: 7px;
     padding: 7px;
     background-color: rgb(230, 226, 226);
     border-radius: none;
+    border: 2px solid rgb(211, 211, 211);
+}
+.message>input:hover:focus{
+    border: 2px solid #a35f2e;
 }
 .submit-btn{
-    background-color: brown;
+    outline: none;
+    border: none;
+    background-color: #8b4513;
     padding: 10px;
     border-radius: 7px;
     width: 10vw;
-    color: antiquewhite;
+    color: white;
     font-size: large;
 }
-
-
-@media only screen and (max-width: 800px){
-    .contact-hero{
-        display: flex;
-        flex-direction: column;
-        gap: 100px;
-        padding: 35px;
-    }
+.submit-btn:hover{
+    background-color: #a35f2e;
 }

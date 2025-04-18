@@ -31,12 +31,12 @@ const ContactPage = () => {
         <div>
           <h1>Book A Strategy Call</h1>
           <div className='map-message'>
-          <div className='message'>
-            <input type="text"placeholder='Your Name:' />
-            <input type="email"placeholder='Your Email:' />
-            <input className='write-message' type="message"placeholder='Your Message:' />
-            <button className='submit-btn'> Submitt</button>
-          </div>
+            <div className='message'>
+              <input type="text"placeholder='Your Name:' />
+              <input type="email"placeholder='Your Email:' />
+              <input type="message"placeholder='Your Message:' />
+              <button className='submit-btn'> Submit</button>
+            </div>
           <div className='message'>hjjhbbb</div>
           </div>
         </div>
@@ -47,24 +47,24 @@ const ContactPage = () => {
             <div className='Reach-us'>
             <p>Get In Touch</p>
             <div className='git-info'>
-              <FaHome /> 
+              <FaHome className='info-icon' /> 
               <p>Rt,88 ilorin Kwara state</p>
              </div>
              <div className='git-info'>
-              <MdEmail /> 
+              <MdEmail className='info-icon' /> 
               <p>alameenthespark@gmail.com</p>
              </div>
              <div className='git-info'>
-              <FaPhoneVolume />
+              <FaPhoneVolume className='info-icon' />
               <p>+234 9165-769-896</p>
              </div>
              <div className='git-info'>
-               <MdPhoneIphone />
+               <MdPhoneIphone className='info-icon' />
               <p>+234 9047-957-855</p>
              </div>
             </div>
            
-           <div>
+           <div className='contact-info'>
             <h6>Contact us for free</h6>
             <h1  className='for-free'>09161699509</h1>
            </div>
