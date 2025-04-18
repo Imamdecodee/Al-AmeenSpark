@@ -1,0 +1,77 @@
+.Footer{
+    background-color: #8b4513;
+    color: white;
+   }
+.footer-up{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #8b4513;
+    color: white;
+    padding: 0px 35px;
+}
+.Logo-footer{
+    margin-top: 1rem;
+    width: 8vw;
+}
+.Logo-footer-text{
+    font-size: 17px;
+    width: 35vw
+}
+.icon{
+    display: flex;
+    gap: 5px;
+}
+
+.copyright>p{
+    margin-left: 25px;
+}
+.git-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: -15px;
+}
+.copyright{
+    font-size: 0.9rem;
+    padding-bottom: 1rem;
+}
+
+
+@media only screen and (max-width: 800px){
+    .footer-up{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 15px;
+        background-color: #8b4513;
+        color: white;
+        padding: 0px 35px;
+    }
+    
+     .copyright>p{
+        margin-left: 25px;
+        font-size: 9px;
+        width: 35vw
+    }
+    .Logo-footer-text{
+        font-size: 7px;
+        width: 35vw
+    }
+    .Get-in-touch-div{
+        font-size: 10px;
+        width: 35vw
+    }
+    .Bussiness-div{
+        font-size: 10px;
+        width: 35vw
+    }
+    .company-div{
+        font-size: 10px;
+        width: 35vw
+    }
+    .icon{
+        width: 66px;
+    }
+};
