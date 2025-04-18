@@ -25,6 +25,14 @@ const HomePage = () => {
 
       </div>
 
+      <section class="help-sec">
+        <h1 class="help">How can we help you?</h1>
+        <p class="help-para">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit delectus recusandae ex. <br />
+          Adipisci veritatis quis non enim sunt maxime eum!
+        </p>
+      </section>
+
     </main>
      <Footer />
     </section>
