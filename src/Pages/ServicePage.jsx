@@ -4,6 +4,7 @@ import Footer from '../Components/Footer';
 import '../Pages/ServicePage.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
+import CallTag from '../Components/CallTag';
 
 const ServicePage = () => {
   useEffect(()=> {
@@ -30,6 +31,7 @@ const ServicePage = () => {
         </div>
 
     </main>
+    <CallTag />
     <Footer />
     </section>
   )

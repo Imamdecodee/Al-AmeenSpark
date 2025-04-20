@@ -6,6 +6,7 @@ import { MdEmail } from "react-icons/md";
 import { FaPhoneVolume } from "react-icons/fa";
 import { FaHome } from "react-icons/fa";
 import { MdPhoneIphone } from "react-icons/md";
+import CallTag from '../Components/CallTag';
 
 const ContactPage = () => {
   return (
@@ -34,10 +35,10 @@ const ContactPage = () => {
             <div className='message'>
               <input type="text"placeholder='Your Name:' />
               <input type="email"placeholder='Your Email:' />
-              <input type="message"placeholder='Your Message:' />
+              <input  type="message"placeholder='Your Message:' />
               <button className='submit-btn'> Submit</button>
             </div>
-          <div className='message'>hjjhbbb</div>
+          <div className='message-map'>hjjhbbb</div>
           </div>
         </div>
      <div className='Get-in-touch'>
@@ -72,6 +73,7 @@ const ContactPage = () => {
             </div>
          </div>
 
+      <CallTag />
       <Footer />
     </section>
   )

@@ -4,6 +4,7 @@ import NavBar from '../Components/NavBar'
 import Footer from '../Components/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
+import CallTag from '../Components/CallTag';
 
 const HomePage = () => {
   useEffect(()=> {
@@ -34,6 +35,7 @@ const HomePage = () => {
       </section>
 
     </main>
+     <CallTag />
      <Footer />
     </section>
   )

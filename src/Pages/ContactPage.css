@@ -82,6 +82,19 @@
 
 
 
+.message-map{
+    width: 30vw;
+    height: 50vh;
+    background-image: url(/src/assets/Images/Map.jpeg);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.199);
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+
 .message{
     width: 30vw;
     height: 50vh;
@@ -91,23 +104,24 @@
     padding: 10px;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 10px;
+    gap: 20px;
 }
+
 .contact-hero{
     display: flex;
     gap: 100px;
     padding: 35px;
+    margin-top: 60px;
+    margin-bottom: 40px;
 }
 .map-message{
     display: flex;
     gap: 5px;
 }
-.input>write-message{
-    height:12vh ;
-}
+
 
 .message>input{
-    width: 21vw;
+    width: 25vw;
     height: 5vh;
     outline: none;
     border: none;
@@ -120,6 +134,10 @@
 .message>input:hover:focus{
     border: 2px solid #a35f2e;
 }
+input[type='message']{
+    padding-bottom: 80px;
+}
+    
 .submit-btn{
     outline: none;
     border: none;
