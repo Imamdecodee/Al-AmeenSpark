@@ -9,7 +9,11 @@
     overflow: hidden;
     position: relative;
     display: flex; align-items: center; justify-content: center;
+    margin-bottom: 50px;
 
+}
+body{
+    background-color:  white;
 }
 
 .hero-cont{
@@ -42,4 +46,46 @@
     margin-top: 2rem;
     line-height: 1.5rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.service-hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  
+}
+.service-hero-divs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.service-hero-box{
+    display: flex;
+    flex-direction: column;
+    background-color:#a35f2ee1;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.199);
+    border-radius: 10px;
+    padding: 10px;
+    width: 20vw;
+    height: auto;
+
+}
+
+.our-coustomer{
+    background-color: #a35f2ee1;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+.Logo-coustomer{
+    width: 8vw;
+}
+.coustomer-logo{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: -10px;
+    margin-bottom: 30px;
 }

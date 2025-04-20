@@ -22,6 +22,7 @@ const HomePage = () => {
         <div class="hero-cont" data-aos="fade-up" data-aos-duration="3000">
           <h4 class="welcome">Welcome To</h4>
           <h1 class="ameen">Al-Ameen Spark</h1>
+          <p>Igniting Brands, Sparking Growth</p>
         </div>
 
       </div>
