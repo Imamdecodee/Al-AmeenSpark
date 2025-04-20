@@ -65,17 +65,26 @@ body{
 .service-hero-box{
     display: flex;
     flex-direction: column;
-    background-color:#a35f2ee1;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.199);
+    background-color:rgba(128, 128, 128, 0.24);
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.329);
     border-radius: 10px;
     padding: 10px;
+    gap: 5px;
     width: 20vw;
     height: auto;
 
 }
+.service-hero-box>p{
+    margin: 0;
+    padding: 0;
+}
+.service-hero-box>h1{
+    margin: 0;
+    padding: 0;
+}
 
 .our-coustomer{
-    background-color: #a35f2ee1;
+    background-color:rgba(128, 128, 128, 0.24);
     padding: 10px;
     margin-bottom: 40px;
 }

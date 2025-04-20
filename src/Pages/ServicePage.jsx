@@ -55,18 +55,17 @@ const ServicePage = () => {
              <FaHome />
              <h1>Web Design & Development</h1>
              <p>   Designing user-friendly, SEO-optimized
- websites that serve as the cornerstone of a
- business’s online presence.</p>
+                  websites that serve as the cornerstone of a
+                  business’s online presence.</p>
           </div>
         </div>
         <div className='service-hero-divs'>
           <div className='service-hero-box'>
              <FaHome />
              <h1>Brand Strategy and Identity:</h1>
-             <p> 
- Crafting unique brand messages, logos,
- and visual identities to differentiate clients
- from competitors.</p>
+             <p>  Crafting unique brand messages, logos,
+                  and visual identities to differentiate clients
+                  from competitors.</p>
           </div>
           <div className='service-hero-box'>
              <FaHome />
@@ -75,6 +74,7 @@ const ServicePage = () => {
                   videos, and graphic designs to resonate
                   with target audiences </p>
           </div>
+          
         </div>
         <div className='service-hero-divs'>
           <div className='service-hero-box'>

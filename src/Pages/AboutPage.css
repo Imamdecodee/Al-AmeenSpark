@@ -1,3 +1,48 @@
+.header{
+    width: 100vw;
+    height: 90vh;
+    background-image: url(/src/assets/Images/Hero.jpg);
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.678);
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    display: flex; align-items: center; justify-content: center;
+    z-index: 9;
+}
+
+.hero-cont{
+    color: white;
+    width: 70%;
+    height: 90%;
+    display: flex; align-items: center; justify-content: center;
+    flex-direction: column;
+
+}
+.services{
+    font-size: 4.5rem;
+    font-family: monospace;
+    padding: 0;
+    margin: 0;
+    margin-top: -2rem;
+    padding: 0px 1rem;
+    color:  white;
+}
+.slogan{
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+    margin-bottom: -1rem;
+    font-weight: 400;
+}
+.para-note{
+    width: 90%;
+    text-align: center;
+    margin-top: 2rem;
+    line-height: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .dash-line{
     width: 10vw;
     background-color:#a35f2ee1;
@@ -12,10 +57,17 @@
     padding: 10px;
     width: 20vw;
     height: auto;
+    margin-top: -40px;
+    z-index: 90;
+}
+.statement-box:hover{
+   transform: scale(30px);
+   transition: ease-in;
+   transition-duration: 0.2s;
 }
 .statment-hero{
     display: flex;
     justify-content: space-around;
-    margin-top: -40px;
+    margin-top: -80px;
     margin-bottom: 40px;
 }

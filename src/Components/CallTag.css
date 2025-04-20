@@ -14,7 +14,13 @@
     justify-content: space-around;
     align-items: center;
     gap: 10px;
+    margin-top: 60px;
 }
 .call-tag-mes{
     width: 60%;
+}
+.call-tag:hover{
+    transform: scale(30px);
+   transition: ease-in;
+   transition-duration: 0.2s;
 }
