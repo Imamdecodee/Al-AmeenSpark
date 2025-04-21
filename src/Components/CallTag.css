@@ -20,7 +20,7 @@
     width: 60%;
 }
 .call-tag:hover{
-    transform: scale(30px);
-   transition: ease-in;
-   transition-duration: 0.2s;
+    transition: 0.1s ease-in;
+    transform: scale(1.02);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.349);
 }

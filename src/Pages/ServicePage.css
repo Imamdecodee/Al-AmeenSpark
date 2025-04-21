@@ -66,13 +66,17 @@ body{
     display: flex;
     flex-direction: column;
     background-color:rgba(128, 128, 128, 0.24);
-    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.329);
     border-radius: 10px;
     padding: 10px;
     gap: 5px;
     width: 20vw;
     height: auto;
-
+}
+.service-hero-box:hover{
+    cursor: pointer;
+    transition: 0.1s ease-in;
+    transform: scale(1.02);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.349);
 }
 .service-hero-box>p{
     margin: 0;
@@ -90,6 +94,7 @@ body{
 }
 .Logo-coustomer{
     width: 8vw;
+    cursor: pointer;
 }
 .coustomer-logo{
     display: flex;
@@ -97,11 +102,12 @@ body{
     gap: 80px;
     margin-top: -10px;
     margin-bottom: 30px;
+    
 }
 .coustomer-pics{
     width: 5vw;
     height: auto;
-    border-radius: 50px;
+    border-radius: 10rem;
 }
 .coustomer-testimony{
     display: flex;
