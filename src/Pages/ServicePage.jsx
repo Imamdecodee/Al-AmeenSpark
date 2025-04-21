@@ -7,6 +7,7 @@ import 'aos/dist/aos.css'
 import CallTag from '../Components/CallTag';
 import { FaHome } from "react-icons/fa";
 import Logo from "../assets/Images/Al-Ameen-logo.png";
+import miqdad from "../assets/Images/miqdad.jpg"
 
 const ServicePage = () => {
   useEffect(()=> {
@@ -111,6 +112,19 @@ const ServicePage = () => {
       </div>
 
       </div>
+      <div class="help-sec">
+        <h1 class="help">Amazing Designs and Quality Work!</h1>
+        <p class="help-para">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit delectus recusandae ex. <br />
+          Adipisci veritatis quis non enim sunt maxime eum!
+        </p>
+        </div>
+        
+        <div className='coustomer-testimony'>
+        <img className='coustomer-pics' src= {miqdad} alt="" />
+        <p>Miqdad Bada</p>
+        <p>C.E.O of Ilm Nexus</p>
+        </div>
 
     </main>
     <CallTag />

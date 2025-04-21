@@ -98,3 +98,18 @@ body{
     margin-top: -10px;
     margin-bottom: 30px;
 }
+.coustomer-pics{
+    width: 5vw;
+    height: auto;
+    border-radius: 50px;
+}
+.coustomer-testimony{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+}
+.coustomer-testimony>p{
+    margin-top: 0px;
+}

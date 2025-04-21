@@ -39,7 +39,7 @@ const AboutPage = () => {
           impactful digital transformation</p>
     </div>
     <div className='statement-box'>
-      <div className='dash-line'>1</div>
+      <div className='dash-line'>.</div>
       <h1>Mission Statement</h1>
       <p>To provide cutting-edge, affordable,
          and scalable digital marketing solutions
@@ -49,7 +49,7 @@ const AboutPage = () => {
          strategies</p>
     </div>
     <div className='statement-box'>
-      <div className='dash-line'>1</div>
+      <div className='dash-line'>.</div>
       <h1>Core Values</h1>
       <p>
         <li>Excellence</li>
