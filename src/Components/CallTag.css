@@ -24,3 +24,42 @@
     transform: scale(1.02);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.349);
 }
+
+
+
+@media (max-width:1000px) {
+    
+}
+
+@media (max-width:580px) {
+    
+}
+
+@media (max-width:418px) {
+    .call-tag{
+        width: 85%;
+        height: 10rem;
+        margin: auto;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .call-tag-mes{
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .call-tag-mes>p{
+        text-align: center;
+        font-size: 0.9rem;
+        margin: 0;
+        padding: 0;
+    }
+    .call-tag-mes>h1{
+        text-align: center;
+    }
+
+}

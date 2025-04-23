@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './NavBar.css'
 import Logo from "../assets/Images/Al-Ameen-logo.png";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { MdCancelPresentation } from "react-icons/md";
 
 const NavBar = () => {
+
+  const [mobileNav, setMobileNav] = useState(false);
+    const openMobileNav = () => {
+      setMobileNav(!mobileNav)
+    };
+
   return (
     <nav class="nav-bar">
 
@@ -23,7 +31,25 @@ const NavBar = () => {
             </div>
             
             <button class="request-btn">Request Quote</button>
-        </main>
+
+            <div onClick={openMobileNav} class="toggle-icon-box">{ mobileNav ? 
+        (< MdCancelPresentation class="toggle-icon"/>) : (<RxHamburgerMenu class="toggle-icon"/>) }</div>
+      
+
+      { mobileNav && <div class="side-bar-toggle"
+      data-aos="fade-left"
+      data-aos-duration="2000">
+          <div class="nav-pages-toggle">
+              <Link class="page-link-tgl" to="/">Home</Link>
+
+              <Link class="page-link-tgl" to="/about">About</Link>
+
+              <Link class="page-link-tgl" to="/service">Service</Link>
+
+              <Link class="page-link-tgl" to="/contact">Contact</Link>
+          </div>
+        </div>}
+      </main>
     </nav>
   )
 }
