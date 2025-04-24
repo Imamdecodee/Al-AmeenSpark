@@ -152,3 +152,35 @@ input[type='message']{
     background-color: #a35f2e;
     cursor: pointer;
 }
+
+
+
+@media (max-width:1000px) {
+    
+}
+
+@media (max-width:580px) {
+    
+}
+
+@media (max-width:418px) {
+
+    .submit-btn{
+        padding: 0.5rem;
+        border-radius: 0.2rem;
+        width: fit-content;
+        color: white;
+        font-size: 0.7rem;
+        text-wrap: nowrap;
+    }
+    .contact-hero{
+        flex-direction: column;
+    }
+    .map-message{
+        flex-direction: column;
+    }
+    .map-message{
+        width: 90vw;
+    }
+    
+}

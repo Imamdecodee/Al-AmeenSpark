@@ -27,25 +27,29 @@ const ContactPage = () => {
         </div>
     </main>
          
-         <div className='contact-hero'>
+        <div className='contact-hero'>
                 
-        <div>
+        <div class="strategy-cont">
+
           <h1>Book A Strategy Call</h1>
           <div className='map-message'>
+
             <div className='message'>
               <input type="text"placeholder='Your Name:' />
               <input type="email"placeholder='Your Email:' />
               <input  type="message"placeholder='Your Message:' />
               <button className='submit-btn'> Submit</button>
             </div>
-          <div className='message-map'>hjjhbbb</div>
+
+            <div className='message-map'></div>
           </div>
+
         </div>
      <div className='Get-in-touch'>
 
             <h1>Get In Touch</h1>
 
-            <div className='Reach-us'>
+          <div className='Reach-us'>
             <p>Get In Touch</p>
             <div className='git-info'>
               <FaHome className='info-icon' /> 
@@ -70,7 +74,7 @@ const ContactPage = () => {
             <h1  className='for-free'>09161699509</h1>
            </div>
 
-            </div>
+          </div>
          </div>
 
       <CallTag />
