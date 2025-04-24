@@ -71,3 +71,22 @@
     margin-top: -80px;
     margin-bottom: 40px;
 }
+
+@media only screen and (max-width: 800px){
+     .statment-hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        margin-top: -30px;
+     }
+     .statement-box{
+        width: 70vw;
+     }
+     .dash-line{
+        width: 25vw;
+        background-color:#a35f2ee1;
+        color:#a35f2ee1 ;
+    }
+}
