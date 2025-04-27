@@ -29,13 +29,13 @@ const Footer = () => {
          experts, strategists, and developers work
          collaboratively to deliver innovative,
          value-driven solutions</p>
-         <div className='icon'>
+         {/* <div className='icon'>
            <Link class="page-link" to="/https://www.facebook.com/share/1DXsaJPc1c/">  <FaFacebookSquare /></Link>
            <Link class="page-link" to="/https://www.facebook.com/share/1DXsaJPc1c/">    <FaTwitterSquare /> </Link>
            <Link class="page-link" to="/https://www.facebook.com/share/1DXsaJPc1c/">      <FaGoogle />    </Link>
            <Link class="page-link" to="/https://www.facebook.com/share/1DXsaJPc1c/">    <FaInstagramSquare />  </Link>
            <Link class="page-link" to="/https://www.facebook.com/share/1DXsaJPc1c/">      <FaLinkedin />   </Link>
-         </div>
+         </div> */}
       </div>
       <div className='company-div'>
         <h1>Company</h1>

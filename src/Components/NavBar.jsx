@@ -32,8 +32,9 @@ const NavBar = () => {
             
             <button class="request-btn">Request Quote</button>
 
-            <div onClick={openMobileNav} class="toggle-icon-box">{ mobileNav ? 
-        (< MdCancelPresentation class="toggle-icon"/>) : (<RxHamburgerMenu class="toggle-icon"/>) }</div>
+            <div onClick={openMobileNav} class="toggle-icon-box">
+              { mobileNav ?   (< MdCancelPresentation class="toggle-icon"/>) : (<RxHamburgerMenu class="toggle-icon"/>) }
+            </div>
       
 
       { mobileNav && <div class="side-bar-toggle"
