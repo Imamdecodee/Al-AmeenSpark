@@ -12,6 +12,7 @@
 .nav-content{
     width: 93%;
     height: 100%;
+    display: none;
     display: flex;
     align-items: center;
     justify-content: space-between;

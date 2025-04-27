@@ -62,6 +62,68 @@ const AboutPage = () => {
     </div>
    </div>
 
+   <div className='D-6-Process-section'>
+    <h1>Our-6-D-Process</h1>
+       <div className='process-section-divs'>
+           <div className='process-hero-divs'>
+               <div className='Proces-hero-box'>
+                  <h1 className='number-proces'>01.</h1>
+                  <h1 className='discover'> Discover</h1>
+                  <p className='p-process'> We begin by understanding your brand,
+                      goals, audience, and challenges. This
+                      phase involves deep research and audits to uncover insights that inform strategy.
+                  </p>
+               </div>
+               <div className='Proces-hero-box'>
+                  <h1 className='number-proces'>02.</h1>
+                  <h1 className='discover'> Discover</h1>
+                  <p className='p-process'> We begin by understanding your brand,
+                      goals, audience, and challenges. This
+                      phase involves deep research and audits to uncover insights that inform strategy.
+                  </p>
+               </div>
+             </div>
+
+           <div className='process-hero-divs'>
+               <div className='Proces-hero-box'>
+                  <h1 className='number-proces'>03.</h1>
+                  <h1 className='discover'> Discover</h1>
+                  <p className='p-process'> We begin by understanding your brand,
+                      goals, audience, and challenges. This
+                      phase involves deep research and audits to uncover insights that inform strategy.
+                  </p>
+               </div>
+               <div className='Proces-hero-box'>
+                  <h1 className='number-proces'>04.</h1>
+                  <h1 className='discover'> Discover</h1>
+                  <p className='p-process'> We begin by understanding your brand,
+                      goals, audience, and challenges. This
+                      phase involves deep research and audits to uncover insights that inform strategy.
+                  </p>
+               </div>
+             </div>
+             <div className='process-hero-divs'>
+               <div className='Proces-hero-box'>
+                  <h1 className='number-proces'>05.</h1>
+                  <h1 className='discover'> Discover</h1>
+                  <p className='p-process'> We begin by understanding your brand,
+                      goals, audience, and challenges. This
+                      phase involves deep research and audits to uncover insights that inform strategy.
+                  </p>
+               </div>
+               <div className='Proces-hero-box'>
+                  <h1 className='number-proces'>06.</h1>
+                  <h1 className='discover'> Discover</h1>
+                  <p className='p-process'> We begin by understanding your brand,
+                      goals, audience, and challenges. This
+                      phase involves deep research and audits to uncover insights that inform strategy.
+                  </p>
+               </div>
+             </div>
+      </div>
+   </div>
+      
+
       <CallTag />
       <Footer />
     </section>

@@ -117,38 +117,43 @@ body{
     margin-top: 0px;
 }
 
-
-
-@media (max-width:1000px) {
-    .services{
-        margin-top: -2rem;
+@media only screen and (max-width: 900px){
+    .service-hero{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       gap: 30px;
+       margin-top: -30px;
     }
-    .slogan{
-        text-align: center;
-        font-size: 1rem;
+    .service-hero-box{
+       width: 75vw;
+       height: 20vh;
+       gap: 10px;
     }
+    .dash-line{
+       width: 25vw;
+       background-color:#a35f2ee1;
+       color:#a35f2ee1 ;
+   }
 }
-
-@media (max-width:580px) {
-    .services{
-        margin-top: -2rem;
+@media only screen and (max-width: 419px){
+    .service-hero{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       gap: 30px;
+       margin-top: -30px;
     }
-    .slogan{
-        text-align: center;
-        font-size: 1rem;
+    .service-hero-box{
+       width: 65vw;
+       height: auto;
+       gap: 10px;
     }
-}
-
-@media (max-width:418px) {
-    .services{
-        font-size: 2rem;
-        margin-top: -2rem;
-    }
-    .slogan{
-        margin-top: 2rem;
-        font-size: 0.5rem;
-    }
-    .service-hero-divs{
-        flex-direction: column;
-    }
+    .dash-line{
+       width: 25vw;
+       background-color:#a35f2ee1;
+       color:#a35f2ee1 ;
+   }
 }
