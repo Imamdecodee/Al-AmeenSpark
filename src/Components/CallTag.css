@@ -17,7 +17,7 @@
     margin-top: 60px;
 }
 .call-tag-mes{
-    width: 60%;
+    width: 75%;
 }
 .call-tag:hover{
     transition: 0.1s ease-in;
@@ -28,11 +28,38 @@
 
 
 @media (max-width:1000px) {
-    
+    .call-tag{
+        width: 80%;
+        margin: auto;
+    }
+    .call-tag-mes{
+        width: 80%;
+    }  
 }
 
 @media (max-width:580px) {
-    
+    .call-tag{
+        width: 85%;
+        height: 10rem;
+        margin: auto;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .call-tag-mes{
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .call-tag-mes>p{
+        text-align: center;
+        font-size: 0.9rem;
+        margin: 0;
+        padding: 0;
+    }  
 }
 
 @media (max-width:418px) {

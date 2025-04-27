@@ -23,6 +23,7 @@ const ContactPage = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum et animi consequatur 
               mollitia dolorum possimus voluptas veritatis molestiae? Asperiores, reiciendis.
             </p>
+            <button class="request-btn-hero">Request Quote</button>
           </div>
         </div>
     </main>

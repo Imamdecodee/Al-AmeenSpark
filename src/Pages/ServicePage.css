@@ -29,7 +29,6 @@ body{
     font-family: monospace;
     padding: 0;
     margin: 0;
-    margin-top: -2rem;
     padding: 0px 1rem;
     color:  white;
 }
@@ -37,13 +36,11 @@ body{
     font-size: 2rem;
     padding: 0;
     margin: 0;
-    margin-bottom: -1rem;
     font-weight: 400;
 }
 .para-note{
     width: 90%;
     text-align: center;
-    margin-top: 2rem;
     line-height: 1.5rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -118,4 +115,40 @@ body{
 }
 .coustomer-testimony>p{
     margin-top: 0px;
+}
+
+
+
+@media (max-width:1000px) {
+    .services{
+        margin-top: -2rem;
+    }
+    .slogan{
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:580px) {
+    .services{
+        margin-top: -2rem;
+    }
+    .slogan{
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:418px) {
+    .services{
+        font-size: 2rem;
+        margin-top: -2rem;
+    }
+    .slogan{
+        margin-top: 2rem;
+        font-size: 0.5rem;
+    }
+    .service-hero-divs{
+        flex-direction: column;
+    }
 }

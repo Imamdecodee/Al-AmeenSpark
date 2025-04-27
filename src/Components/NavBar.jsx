@@ -30,10 +30,8 @@ const NavBar = () => {
                 <Link class="page-link" to="/contact">Contact</Link>
             </div>
             
-            <button class="request-btn">Request Quote</button>
-
             <div onClick={openMobileNav} class="toggle-icon-box">{ mobileNav ? 
-        (< MdCancelPresentation class="toggle-icon"/>) : (<RxHamburgerMenu class="toggle-icon"/>) }</div>
+        (< MdCancelPresentation class="toggle-icon-2"/>) : (<RxHamburgerMenu class="toggle-icon-1"/>) }</div>
       
 
       { mobileNav && <div class="side-bar-toggle"

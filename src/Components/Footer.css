@@ -2,22 +2,17 @@
     margin-top: 80px;
     background-color: #8b4513;
     color: white;
+    width: 100vw;
    }
 .footer-up{
     display: flex;
     justify-content: space-between;
-    padding: 15px;
-    background-color: #8b4513;
     color: white;
-    padding: 0px 35px;
 }
 .Logo-footer{
 
-    width: 8vw;
-    padding: 10px;
-
     margin-top: 1rem;
-    width: 8vw;
+    width: 10rem;
 
 }
 .Logo-footer-text{
@@ -53,31 +48,54 @@
         padding: 15px;
         background-color: #8b4513;
         color: white;
-        padding: 0px 35px;
+    }
+    .Logo-footer{
+        width: 8rem;
+    }
+    .copyright{
+        margin: auto;
     }
     
      .copyright>p{
         margin-left: 25px;
-        font-size: 9px;
-        width: 35vw
+        font-size: 11px;
+        width: fit fit-content;
+        line-height: 1.2rem;
+        text-align: center;
+        margin: auto;
     }
     .Logo-footer-text{
-        font-size: 7px;
-        width: 35vw
+        font-size: 15px;
+        width: 100%;
+        line-height: 1.2rem;
     }
     .Get-in-touch-div{
         font-size: 10px;
         width: 35vw
     }
     .Bussiness-div{
-        font-size: 10px;
-        width: 35vw
+        font-size: 16px;
+        width: 50%;
     }
     .company-div{
-        font-size: 10px;
-        width: 35vw
+        font-size: 16px;
+        width: 50%;
+    }
+    .Get-in-touch-div{
+        width: 50%;
+    }
+    .git-info{
+        font-size: 16px;
     }
     .icon{
-        width: 66px;
+        gap: 2rem;
+    }
+    .page-link{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .logo-side{
+        width: 100%;
     }
 };

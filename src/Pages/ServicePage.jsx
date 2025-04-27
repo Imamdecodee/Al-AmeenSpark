@@ -24,11 +24,8 @@ const ServicePage = () => {
 
           <div class="hero-cont" data-aos="flip-down" data-aos-duration="3000">
             <h1 class="services">Services</h1>
-            <h5 class="slogan">We provide a wide range of services.</h5>
-            <p class="para-note">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum et animi consequatur 
-              mollitia dolorum possimus voluptas veritatis molestiae? Asperiores, reiciendis.
-            </p>
+            <h5 class="slogan">We provide a wide range of services.</h5> <br /> <br />
+            <button class="request-btn-hero">Request Quote</button>
           </div>
 
         </div>
@@ -43,6 +40,7 @@ const ServicePage = () => {
       </div>
 
       <div className='service-hero'>
+        
         <div className='service-hero-divs'>
           <div className='service-hero-box'>
              <FaHome />
@@ -60,6 +58,7 @@ const ServicePage = () => {
                   business’s online presence.</p>
           </div>
         </div>
+
         <div className='service-hero-divs'>
           <div className='service-hero-box'>
              <FaHome />
@@ -77,6 +76,7 @@ const ServicePage = () => {
           </div>
           
         </div>
+
         <div className='service-hero-divs'>
           <div className='service-hero-box'>
              <FaHome />

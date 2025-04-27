@@ -144,7 +144,7 @@ input[type='message']{
     background-color: #8b4513;
     padding: 10px;
     border-radius: 7px;
-    width: 10vw;
+    width: 7rem;
     color: white;
     font-size: large;
 }
@@ -156,11 +156,25 @@ input[type='message']{
 
 
 @media (max-width:1000px) {
-    
+    .submit-btn{
+        padding: 0.5rem;
+        border-radius: 0.2rem;
+        width: fit-content;
+        color: white;
+        font-size: 0.9rem;
+        text-wrap: nowrap;
+    }
 }
 
 @media (max-width:580px) {
-    
+    .submit-btn{
+        padding: 0.5rem;
+        border-radius: 0.2rem;
+        width: fit-content;
+        color: white;
+        font-size: 0.9rem;
+        text-wrap: nowrap;
+    }
 }
 
 @media (max-width:418px) {

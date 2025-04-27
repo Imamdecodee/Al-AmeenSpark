@@ -24,6 +24,7 @@ const AboutPage = () => {
          collaboratively to deliver innovative,
          value-driven solutions
   </p>
+  <button class="request-btn-hero">Request Quote</button>
 </div>
 
 </div>

@@ -15,26 +15,27 @@ import { MdPhoneIphone } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className='Footer'>
-       <div className='footer-up'>
+  <div className='Footer'>
+    <div className='footer-up'>
       <div className='logo-side'>
         <img className='Logo-footer' src= {Logo} alt="" />
         <p className='Logo-footer-text'>
-          Al-Ameen Spark is a dynamic digital
-         marketing agency based in Ilorin, Nigeria,
-         but offer service in a entire world and that
-         why weoperate romotely,dedicated to
-         helping businesses of all sizes succeed in
-         the digital world. Our team of creative
-         experts, strategists, and developers work
-         collaboratively to deliver innovative,
-         value-driven solutions</p>
+            Al-Ameen Spark is a dynamic digital
+          marketing agency based in Ilorin, Nigeria,
+          but offer service in a entire world and that
+          why weoperate romotely,dedicated to
+          helping businesses of all sizes succeed in
+          the digital world. Our team of creative
+          experts, strategists, and developers work
+          collaboratively to deliver innovative,
+          value-driven solutions.
+         </p>
          <div className='icon'>
-           <Link class="page-link" to="/https://www.facebook.com/share/1DXsaJPc1c/">  <FaFacebookSquare /></Link>
-           <Link class="page-link" to="/https://www.facebook.com/share/1DXsaJPc1c/">    <FaTwitterSquare /> </Link>
-           <Link class="page-link" to="/https://www.facebook.com/share/1DXsaJPc1c/">      <FaGoogle />    </Link>
-           <Link class="page-link" to="/https://www.facebook.com/share/1DXsaJPc1c/">    <FaInstagramSquare />  </Link>
-           <Link class="page-link" to="/https://www.facebook.com/share/1DXsaJPc1c/">      <FaLinkedin />   </Link>
+           <Link to="/https://www.facebook.com/share/1DXsaJPc1c/">  <FaFacebookSquare  class="page-link"/></Link>
+           <Link to="/https://www.facebook.com/share/1DXsaJPc1c/">    <FaTwitterSquare  class="page-link"/> </Link>
+           <Link to="/https://www.facebook.com/share/1DXsaJPc1c/">      <FaGoogle  class="page-link"/>    </Link>
+           <Link to="/https://www.facebook.com/share/1DXsaJPc1c/">    <FaInstagramSquare  class="page-link"/>  </Link>
+           <Link to="/https://www.facebook.com/share/1DXsaJPc1c/">      <FaLinkedin  class="page-link"/>   </Link>
          </div>
       </div>
       <div className='company-div'>
@@ -51,6 +52,7 @@ const Footer = () => {
         <p>Facts</p>
         <p>Customers</p>
       </div>
+
       <div className='Get-in-touch-div'>
         <h1>Get In Touch</h1>
         <div className='git-info'>
@@ -76,7 +78,7 @@ const Footer = () => {
     </div>
     <div className='copyright'>
       <hr />
-      <p className='copyright'> Copyright @ 2025 Al-Ameen-Spark | Powered by The-Techies</p>
+      <p> Copyright @ 2025 Al-Ameen-Spark | Powered by The-Techies</p>
     </div>
     </div>
    
