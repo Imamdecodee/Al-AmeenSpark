@@ -30,6 +30,7 @@
     color:  white;
     outline-style: solid;
     outline-color: white;
+    text-wrap: nowrap;
 }
 .ameen{
     font-size: 5rem;

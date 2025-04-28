@@ -36,7 +36,7 @@ const NavBar = () => {
 
       { mobileNav && <div class="side-bar-toggle"
       data-aos="fade-left"
-      data-aos-duration="2000">
+      data-aos-duration="1000">
           <div class="nav-pages-toggle">
               <Link class="page-link-tgl" to="/">Home</Link>
 

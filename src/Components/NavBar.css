@@ -68,7 +68,7 @@
 }
 .toggle-icon-2{
     font-size: 2rem;
-    color: #8b4513;
+    color: #8b4411;
 }
 .toggle-icon-1{
     font-size: 2rem;
@@ -83,7 +83,6 @@
 .nav-pages-toggle{
     display: flex;
     flex-direction: column;
-    
     gap: 3rem;
     width: 80%;
     

@@ -10,7 +10,7 @@ const AboutPage = () => {
       <NavBar />
       <div class="header">
 
-<div class="hero-cont-about" data-aos="flip-down" data-aos-duration="3000">
+<div class="hero-cont-about" data-aos="fade-up" data-aos-duration="3000">
   <h1 class="about">About Us:</h1>
   <h5 class="a-slogan">We provide a wide range of services.</h5>
   <p class="para-note">
