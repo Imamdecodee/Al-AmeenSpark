@@ -10,9 +10,9 @@ const AboutPage = () => {
       <NavBar />
       <div class="header">
 
-<div class="hero-cont" data-aos="flip-down" data-aos-duration="3000">
-  <h1 class="services">About Us:</h1>
-  <h5 class="slogan">We provide a wide range of services.</h5>
+<div class="hero-cont-about" data-aos="flip-down" data-aos-duration="3000">
+  <h1 class="about">About Us:</h1>
+  <h5 class="a-slogan">We provide a wide range of services.</h5>
   <p class="para-note">
          Al-Ameen Spark is a dynamic digital
          marketing agency based in Ilorin, Nigeria,

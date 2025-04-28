@@ -16,9 +16,9 @@ const ContactPage = () => {
 
         <div class="header">
 
-          <div class="hero-cont" data-aos="flip-up" data-aos-duration="3000">
-            <h1 class="services">Contact Us</h1>
-            <h5 class="slogan">Contact for Premium Business Services .</h5>
+          <div class="hero-cont-contact" data-aos="flip-up" data-aos-duration="3000">
+            <h1 class="contact">Contact Us</h1>
+            <h5 class="c-slogan">Contact for Premium Business Services .</h5>
             <p class="para-note">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum et animi consequatur 
               mollitia dolorum possimus voluptas veritatis molestiae? Asperiores, reiciendis.

@@ -22,7 +22,7 @@ const ServicePage = () => {
 
         <div class="header">
 
-          <div class="hero-cont" data-aos="flip-down" data-aos-duration="3000">
+          <div class="hero-cont-service" data-aos="flip-down" data-aos-duration="3000">
             <h1 class="services">Services</h1>
             <h5 class="slogan">We provide a wide range of services.</h5> <br /> <br />
             <button class="request-btn-hero">Request Quote</button>
@@ -43,7 +43,7 @@ const ServicePage = () => {
         
         <div className='service-hero-divs'>
           <div className='service-hero-box'>
-             <FaHome />
+             <FaHome class="course-icon"/>
              <h1>Social Media Marketing</h1>
              <p>Social media marketing, SEO, PPC
                 campaigns, and email marketing to
@@ -51,7 +51,7 @@ const ServicePage = () => {
                 conversions</p>
           </div>
           <div className='service-hero-box'>
-             <FaHome />
+             <FaHome class="course-icon"/>
              <h1>Web Design & Development</h1>
              <p>   Designing user-friendly, SEO-optimized
                   websites that serve as the cornerstone of a
@@ -61,14 +61,14 @@ const ServicePage = () => {
 
         <div className='service-hero-divs'>
           <div className='service-hero-box'>
-             <FaHome />
+             <FaHome class="course-icon"/>
              <h1>Brand Strategy and Identity:</h1>
              <p>  Crafting unique brand messages, logos,
                   and visual identities to differentiate clients
                   from competitors.</p>
           </div>
           <div className='service-hero-box'>
-             <FaHome />
+             <FaHome class="course-icon"/>
              <h1>Content Marketing</h1>
              <p>  Delivering high-quality blogs, articles,
                   videos, and graphic designs to resonate
@@ -79,14 +79,14 @@ const ServicePage = () => {
 
         <div className='service-hero-divs'>
           <div className='service-hero-box'>
-             <FaHome />
+             <FaHome class="course-icon"/>
              <h1>Training and Consulting:</h1>
              <p> Providing workshops, team training, and  
               strategic advice to empower businesses
               with the skills they need to succeed</p>
           </div>
           <div className='service-hero-box'>
-             <FaHome />
+             <FaHome class="course-icon"/>
              <h1> Community Management and Engagement</h1>
              <p> Building and nurturing online
                  communities to foster brand loyalty and
