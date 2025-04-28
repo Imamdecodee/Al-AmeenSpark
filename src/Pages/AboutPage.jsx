@@ -121,9 +121,7 @@ const AboutPage = () => {
                </div>
              </div>
       </div>
-   </div>
-      
-
+   </div>  
       <CallTag />
       <Footer />
     </section>
