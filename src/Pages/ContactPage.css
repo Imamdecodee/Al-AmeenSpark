@@ -211,10 +211,14 @@ input[type='message']{
     .message>input{
         width: 17rem;
         height: 2.5rem;
+        margin: auto;
     }
     .submit-btn{
         font-size: 1rem;
         margin: auto;
+    }
+    .message-map{
+        margin-top: 4rem;
     }
     .hero-cont-contact{
         width: 90% !important;
