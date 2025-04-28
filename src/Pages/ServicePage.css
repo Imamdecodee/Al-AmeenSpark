@@ -16,7 +16,7 @@ body{
     background-color:  white;
 }
 
-.hero-cont{
+.hero-cont-service{
     color: white;
     width: 70%;
     height: 90%;
@@ -56,6 +56,8 @@ body{
 }
 .service-hero-divs{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     gap: 10px;
 }
@@ -80,6 +82,7 @@ body{
     padding: 0;
 }
 .service-hero-box>h1{
+    color: #441f04e1;
     margin: 0;
     padding: 0;
 }
@@ -119,6 +122,7 @@ body{
 
 @media only screen and (max-width: 900px){
     .service-hero{
+        width: 90%;
        display: flex;
        flex-direction: column;
        justify-content: center;
@@ -126,8 +130,11 @@ body{
        gap: 30px;
        margin-top: -30px;
     }
+    .hero-cont-service{
+        width: 85vw;
+    }
     .service-hero-box{
-       width: 75vw;
+       width: 90vw;
        height: 20vh;
        gap: 10px;
     }
@@ -151,9 +158,31 @@ body{
        height: auto;
        gap: 10px;
     }
+    .services{
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+    .slogan{
+        font-size: 1.7rem;
+        text-align: center;
+    }
     .dash-line{
        width: 25vw;
        background-color:#a35f2ee1;
        color:#a35f2ee1 ;
+   }
+   .course-icon{
+    font-size: 1.3rem;
+    color: #a35f2ee1;
+   }
+   .coustomer-pics{
+    width: 4rem;
+    margin-bottom: 0.3rem;
+   }
+   .coustomer-logo{
+    width: 85%;
+   }
+   .logo-coustomer{
+    width: 3rem;
    }
 }
