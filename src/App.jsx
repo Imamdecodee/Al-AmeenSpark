@@ -6,6 +6,7 @@ import AboutPage from './Pages/AboutPage';
 import ServicePage from './Pages/ServicePage';
 import ContactPage from './Pages/ContactPage';
 import RequestPage from './Pages/RequestPage';
+import EachServicePage from './Pages/Each-ServicePage';
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/service" element={<ServicePage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/request" element={<RequestPage />} />
+          <Route path="/each-service" element={<EachServicePage />} />
         </Routes>
       </BrowserRouter>
 
