@@ -86,6 +86,47 @@
 
 
 
+.service-hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  
+}
+.service-hero-divs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.service-hero-box{
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(128, 128, 128, 0.24);
+    border-radius: 10px;
+    padding: 10px;
+    gap: 5px;
+    width: 20vw;
+    height: auto;
+}
+.service-hero-box:hover{
+    cursor: pointer;
+    transition: 0.1s ease-in;
+    transform: scale(1.02);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.349);
+}
+.service-hero-box>p{
+    margin: 0;
+    padding: 0;
+}
+.service-hero-box>h1{
+    color: #441f04e1;
+    margin: 0;
+    padding: 0;
+}
 
 
 
@@ -136,4 +177,151 @@
     justify-content: center;
     flex-wrap: wrap;
    }
+}
+
+.coustomer-pics{
+    width: 5vw;
+    height: auto;
+    border-radius: 10rem;
+}
+.coustomer-testimony{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+}
+.coustomer-testimony>p{
+    margin-top: 0px;
+}
+
+
+.meet-the-team-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Team-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-meet-team{
+    margin-top: -20px;
+    width: 40vw;
+}
+.picture-divs{
+    display: flex;
+    gap: 12px;
+    margin-top: 40px;
+}
+.picture-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.team-pics{
+    width: 25vw;
+    height: 50vh;
+    background-image: url(/src/assets/Images/SML.jpg);
+    background-size: cover;
+    border-radius: 20px 3px;
+    box-shadow: 0px 0px 30px rgba(78, 51, 1, 0.199);
+    overflow: hidden;
+    position: relative;
+    display: flex; align-items: center; justify-content: center;
+
+}
+.team-pics-2{
+    width: 25vw;
+    height: 50vh;
+    background-image: url(/src/assets/Images/S.E.O.jpg);
+    background-size: cover;
+    border-radius: 20px 3px;
+    box-shadow: 0px 0px 30px rgba(78, 51, 1, 0.199);
+    overflow: hidden;
+    position: relative;
+    display: flex; align-items: center; justify-content: center;
+
+}
+.team-pics-3{
+    width: 25vw;
+    height: 50vh;
+    background-image: url(/src/assets/Images/MANAGER.jpg);
+    background-size: cover;
+    border-radius: 20px 3px;
+    box-shadow: 0px 0px 30px rgba(78, 51, 1, 0.199);
+    overflow: hidden;
+    position: relative;
+    display: flex; align-items: center; justify-content: center;
+
+}
+.team-pics:hover{
+    transition: 0.1s ease-in;
+    transform: scale(1.02);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.349);
+}
+.team-pics-2:hover{
+    transition: 0.1s ease-in;
+    transform: scale(1.02);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.349);
+}
+.team-pics-3:hover{
+    transition: 0.1s ease-in;
+    transform: scale(1.02);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.349);
+}
+.team-position{
+    margin-top: -20px;
+}
+
+@media (max-width:1000px) {
+    .picture-divs{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .team-pics-3,.team-pics-2,.team-pics{
+        width: 60vw;
+      }
+}
+
+
+@media (max-width:580px) {
+    .picture-divs{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 40px;
+    }
+    .team-pics-3,.team-pics-2,.team-pics{
+        width: 60vw;
+        height: 60vw;
+      }
+      .text-meet-team{
+        margin-top: -20px;
+        width: 63vw;
+    }
+}
+
+
+
+@media (max-width:418px) {
+    .picture-divs{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 40px;
+    }
+    .team-pics-3,.team-pics-2,.team-pics{
+        width: 65vw;
+        height: 60vw;
+      }
+      .text-meet-team{
+        margin-top: -20px;
+        width: 63vw;
+    }
 }
