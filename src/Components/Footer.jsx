@@ -40,10 +40,10 @@ const Footer = () => {
       </div>
       <div className='company-div'>
         <h1>Company</h1>
-        <p>Home</p>
-        <p>About</p>
-        <p>Services</p>
-        <p>Contact</p>
+        <Link class="f-page-link" to="/">Home</Link>
+        <Link class="f-page-link" to="/about">About</Link>
+        <Link class="f-page-link" to="/service">Service</Link>
+        <Link class="f-page-link" to="/contact">Contact</Link>
       </div>
       <div className='Bussiness-div'>
         <h1>Business</h1>
@@ -77,7 +77,7 @@ const Footer = () => {
       </div>
     </div>
     <div className='copyright'>
-      <hr />
+      <hr class="f-line"/>
       <p> Copyright @ 2025 Al-Ameen-Spark | Powered by The-Techies</p>
     </div>
     </div>

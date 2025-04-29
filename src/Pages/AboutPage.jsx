@@ -3,6 +3,7 @@ import NavBar from '../Components/NavBar'
 import Footer from '../Components/Footer'
 import '../Pages/AboutPage.css'
 import CallTag from '../Components/CallTag'
+import { Link } from 'react-router-dom'
 
 const AboutPage = () => {
   return (
@@ -24,7 +25,9 @@ const AboutPage = () => {
          collaboratively to deliver innovative,
          value-driven solutions
   </p>
-  <button class="request-btn-hero">Request Quote</button>
+  <Link to="/request"> 
+    <button class="request-btn-hero">Request Service</button>
+  </Link>
 </div>
 
 </div>

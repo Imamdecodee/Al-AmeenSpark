@@ -1,0 +1,11 @@
+.header-cont{
+    width: 100vw;
+    height: 90vh;
+    background-image: url(/src/assets/Images/Hero.jpg);
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.678);
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    display: flex; align-items: center; justify-content: center;
+}

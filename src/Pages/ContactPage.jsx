@@ -7,6 +7,7 @@ import { FaPhoneVolume } from "react-icons/fa";
 import { FaHome } from "react-icons/fa";
 import { MdPhoneIphone } from "react-icons/md";
 import CallTag from '../Components/CallTag';
+import { Link } from 'react-router-dom';
 
 const ContactPage = () => {
   return (
@@ -23,7 +24,9 @@ const ContactPage = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum et animi consequatur 
               mollitia dolorum possimus voluptas veritatis molestiae? Asperiores, reiciendis.
             </p>
-            <button class="request-btn-hero">Request Quote</button>
+            <Link to="/request"> 
+             <button class="request-btn-hero">Request Service</button>
+            </Link>
           </div>
         </div>
     </main>

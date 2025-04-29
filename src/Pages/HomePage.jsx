@@ -5,6 +5,7 @@ import Footer from '../Components/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 import CallTag from '../Components/CallTag';
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   useEffect(()=> {
@@ -17,13 +18,15 @@ const HomePage = () => {
     <NavBar />
     <main>
 
-      <div class="header">
+      <div class="header" id="hero-home">
 
         <div class="hero-cont" data-aos="fade-up" data-aos-duration="3000">
           <h4 class="welcome">Welcome To</h4>
           <h1 class="ameen">Al-Ameen Spark</h1>
           <p>Igniting Brands, Sparking Growth</p>
-          <button class="request-btn-hero">Request Quote</button>
+          <Link to="/request"> 
+           <button class="request-btn-hero">Request Service</button>
+          </Link>
         </div>
 
       </div>

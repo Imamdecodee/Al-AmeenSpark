@@ -5,6 +5,7 @@ import HomePage from './Pages/HomePage'
 import AboutPage from './Pages/AboutPage';
 import ServicePage from './Pages/ServicePage';
 import ContactPage from './Pages/ContactPage';
+import RequestPage from './Pages/RequestPage';
 
 
 const App = () => {
@@ -17,9 +18,9 @@ const App = () => {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/service" element={<ServicePage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/request" element={<RequestPage />} />
         </Routes>
       </BrowserRouter>
-
 
     </section>
   )

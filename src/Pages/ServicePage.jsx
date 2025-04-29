@@ -8,6 +8,7 @@ import CallTag from '../Components/CallTag';
 import { FaHome } from "react-icons/fa";
 import Logo from "../assets/Images/Al-Ameen-logo.png";
 import miqdad from "../assets/Images/miqdad.jpg"
+import { Link } from 'react-router-dom';
 
 const ServicePage = () => {
   useEffect(()=> {
@@ -25,7 +26,9 @@ const ServicePage = () => {
           <div class="hero-cont-service" data-aos="flip-down" data-aos-duration="3000">
             <h1 class="services">Services</h1>
             <h5 class="slogan">We provide a wide range of services.</h5> <br /> <br />
-            <button class="request-btn-hero">Request Quote</button>
+            <Link to="/request"> 
+             <button class="request-btn-hero">Request Service</button>
+            </Link>
           </div>
 
         </div>
