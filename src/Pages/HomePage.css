@@ -226,7 +226,7 @@
 .team-pics{
     width: 25vw;
     height: 50vh;
-    background-image: url(/src/assets/Images/SML.jpg);
+    background-image: url(/src/assets/Images/founder.jpg);
     background-size: cover;
     border-radius: 20px 3px;
     box-shadow: 0px 0px 30px rgba(78, 51, 1, 0.199);
@@ -238,7 +238,7 @@
 .team-pics-2{
     width: 25vw;
     height: 50vh;
-    background-image: url(/src/assets/Images/S.E.O.jpg);
+    background-image: url(/src/assets/Images/SML.jpg);
     background-size: cover;
     border-radius: 20px 3px;
     box-shadow: 0px 0px 30px rgba(78, 51, 1, 0.199);
@@ -248,6 +248,18 @@
 
 }
 .team-pics-3{
+    width: 25vw;
+    height: 50vh;
+    background-image: url(/src/assets/Images/S.E.O.jpg);
+    background-size: cover;
+    border-radius: 20px 3px;
+    box-shadow: 0px 0px 30px rgba(78, 51, 1, 0.199);
+    overflow: hidden;
+    position: relative;
+    display: flex; align-items: center; justify-content: center;
+
+}
+.team-pics-4{
     width: 25vw;
     height: 50vh;
     background-image: url(/src/assets/Images/MANAGER.jpg);
@@ -270,6 +282,11 @@
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.349);
 }
 .team-pics-3:hover{
+    transition: 0.1s ease-in;
+    transform: scale(1.02);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.349);
+}
+.team-pics-4:hover{
     transition: 0.1s ease-in;
     transform: scale(1.02);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.349);
@@ -297,7 +314,7 @@
         gap: 12px;
         margin-top: 40px;
     }
-    .team-pics-3,.team-pics-2,.team-pics{
+    .team-pics-3,.team-pics-2,.team-pics,.team-pics-4{
         width: 60vw;
         height: 60vw;
       }
@@ -316,7 +333,7 @@
         gap: 12px;
         margin-top: 40px;
     }
-    .team-pics-3,.team-pics-2,.team-pics{
+    .team-pics-3,.team-pics-2,.team-pics,.team-pics-4{
         width: 65vw;
         height: 60vw;
       }

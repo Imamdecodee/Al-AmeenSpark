@@ -5,9 +5,6 @@ import Footer from '../Components/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 import { FaHome } from "react-icons/fa";
-import latifat from "../assets/Images/SML.jpg"
-import Nafisat from "../assets/Images/S.E.O.jpg"
-import Rodiyah from "../assets/Images/MANAGER.jpg"
 import CallTag from '../Components/CallTag';
 import { Link } from 'react-router-dom';
 
@@ -108,19 +105,28 @@ const HomePage = () => {
      <div className='picture-divs'>
            <div className='picture-box'>
              <div className='team-pics' > </div>  
-              <h4>Miqdad Bada</h4>
+              <h4>Muhammad Bada</h4>
               <p className='team-position'>Founder</p>
            </div>
+
            <div className='picture-box'>
             <div className='team-pics-2'> </div>  
-              <h4>Jamal Opeyemi</h4>
-              <p className='team-position'>S.E.O</p>
+            <h4>  Nafisat Abisola Odedeyi </h4>
+            <p className='team-position'>Chief Operating officer </p>
            </div>
+
            <div className='picture-box'>
              <div className='team-pics-3'> </div> 
-              <h4>Muhammad Bada</h4>
-              <p className='team-position'>Manager</p>
+             <h4>   Rejoice Ogine</h4>
+              <p className='team-position'>Head of strategy</p>
            </div>
+
+           <div className='picture-box'>
+             <div className='team-pics-4'> </div> 
+              <h4> Tim Mary Magdalene </h4>
+              <p className='team-position'>Virtual Assistant </p>
+           </div>
+
      </div>
 
    </div>

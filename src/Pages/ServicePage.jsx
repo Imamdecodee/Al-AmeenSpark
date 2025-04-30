@@ -48,7 +48,7 @@ const ServicePage = () => {
       <div className='service-hero'>
         
         <div className='service-hero-divs'>
-      <Link to="/each-service">
+      <Link to="/each-service" className='er'>
          <div className='service-hero-box'>
              <TiSocialDribbble class="course-icon"/>
              <h1>Social Media Marketing</h1>
