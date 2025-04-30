@@ -113,6 +113,43 @@ const RequestPage = () => {
       </main>
     </section>
 
+    <main class="package-sec">
+
+
+      <div class="package-box">
+        <div class="pack-img"></div>
+        <div class="pack-text-para">
+          <p>Service Package 01</p>
+          <h3>NGN #50,000</h3>
+        </div>
+      </div>
+
+      <div class="package-box">
+        <div class="pack-img"></div>
+        <div class="pack-text-para">
+          <p>Service Package 02</p>
+          <h3>NGN #80,000</h3>
+        </div>
+      </div>
+
+      <div class="package-box">
+        <div class="pack-img"></div>
+        <div class="pack-text-para">
+          <p>Service Package 03</p>
+          <h3>NGN #120,000</h3>
+        </div>
+      </div>
+
+      <div class="package-box">
+        <div class="pack-img"></div>
+        <div class="pack-text-para">
+          <p>Service Package 04</p>
+          <h3>NGN #200,000</h3>
+        </div>
+      </div>
+
+    </main>
+
 
     <Footer/>
     </section>

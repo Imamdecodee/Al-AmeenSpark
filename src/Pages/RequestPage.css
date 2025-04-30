@@ -44,6 +44,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 3rem;
     margin: 0;
+    color: #833b07;
 }
 .sec-2-cont>p{
     font-size: 1.2rem;
@@ -106,7 +107,7 @@ input{
 }
 input[type="date"]::-webkit-calendar-picker-indicator{
     display: none;
-  }
+}
 input[type="time"]::-webkit-calendar-picker-indicator {
     display: none;
   }
@@ -117,6 +118,54 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 
+.package-sec{
+    width: 80vw;
+    margin: auto;
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4rem;
+}
+.package-box{
+    width: 23.5%;
+    height: 3.5rem;
+    border: 2px solid rgb(175, 175, 175);
+    border-radius: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.package-box:hover{
+    background-color: #eeeeee;
+    cursor: pointer;
+    border: 2px solid rgb(116, 101, 101);
+}
+.pack-img{
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 0.2rem;
+    border: 2px solid rgb(218, 141, 0);
+    background-color: orange;
+}
+.pack-text-para{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+.pack-text-para>p{
+    margin: 0;
+    padding: 0;
+    color: #833b07;
+    font-size: 0.9rem;
+    text-wrap: nowrap;
+}
+.pack-text-para>h3{
+    margin: 0;
+    padding: 0;
+    text-wrap: nowrap;
+}
 
 
 
@@ -140,6 +189,20 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     .res-cont{
         width: 80vw;
     }
+
+
+    .package-sec{
+        width: 70vw;
+        flex-direction: column;
+        gap: 2rem;
+       }
+       .package-box{
+        width: 40vw;
+        gap: 2.5rem;
+       }
+       .package-text-para>h3{
+        font-size: 1.7rem;
+       }
 }
 
 @media (max-width:580px) {
@@ -170,16 +233,28 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     .res-cont{
         gap: 2rem;
     }
+
+    .package-sec{
+        width: 70vw;
+        flex-direction: column;
+        gap: 2rem;
+        }
+        .package-box{
+        width: 58vw;
+        gap: 1.5rem;
+        }
+        .package-text-para>h3{
+        font-size: 1.7rem;
+        }
 }
 
 @media (max-width:418px) {
     .reserve{
-        font-size: 2.7rem;
+        font-size: 2.5rem;
         text-align: center;
-        width: 80%;
     }
     .res-para{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .sec-2-cont>h1{
         width: 100%;
@@ -190,5 +265,18 @@ input[type="time"]::-webkit-calendar-picker-indicator {
         font-size: 1rem;
         text-align: center;
         line-height: 1.3rem;
+    }
+
+    .package-sec{
+    width: 70vw;
+    flex-direction: column;
+    gap: 2rem;
+    }
+    .package-box{
+    width: 65vw;
+    gap: 0.5rem;
+    }
+    .package-text-para>h3{
+    font-size: 1.7rem;
     }
 }

@@ -17,7 +17,7 @@ const ContactPage = () => {
 
         <div class="header">
 
-          <div class="hero-cont-contact" data-aos="flip-up" data-aos-duration="3000">
+          <div class="hero-cont-contact" data-aos="fade-up" data-aos-duration="3000">
             <h1 class="contact">Contact Us</h1>
             <h5 class="c-slogan">Contact for Premium Business Services .</h5>
             <p class="para-note">

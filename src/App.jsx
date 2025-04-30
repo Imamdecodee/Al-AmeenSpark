@@ -10,6 +10,8 @@ import SocialMediaMarketing from './ServicesPage/SocialMediaMarketing';
 import WebDevelopment from './ServicesPage/WebDevelopment';
 import BrandStrategy from './ServicesPage/BrandStrategy';
 import ContentMarketing from './ServicesPage/ContentMarketing';
+import Training from './ServicesPage/Training';
+import CommunityManagement from './ServicesPage/CommunityManagement';
 
 
 const App = () => {
@@ -27,6 +29,8 @@ const App = () => {
           <Route path="/webdevelopment" element={<WebDevelopment />} />
           <Route path="/brandstrategy" element={<BrandStrategy />} />
           <Route path="/contentmarketing" element={<ContentMarketing />} />
+          <Route path="/training" element={<Training />} />
+          <Route path="/communitymanagement" element={<CommunityManagement />} />
         </Routes>
       </BrowserRouter>
 

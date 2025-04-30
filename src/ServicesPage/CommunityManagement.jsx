@@ -5,7 +5,7 @@ import Footer from '../Components/Footer'
 import { MdOutlineCallEnd } from "react-icons/md";
 import { Link } from 'react-router-dom';
 
-const SocialMediaMarketing = () => {
+const CommunityManagement = () => {
   return (
     <section>
 
@@ -13,7 +13,7 @@ const SocialMediaMarketing = () => {
 
     <div>
       <main class="header-service-cont">
-        <div className='Each-service-Hero'>Social Media Marketing</div>
+        <div className='Each-service-Hero'>Community Management & Engagement</div>
       </main>
        <section className='hero-section' >
            <div className='service-side-div' >
@@ -67,4 +67,4 @@ const SocialMediaMarketing = () => {
   )
 }
 
-export default SocialMediaMarketing
+export default CommunityManagement
