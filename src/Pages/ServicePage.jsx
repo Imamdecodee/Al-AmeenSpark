@@ -9,6 +9,9 @@ import { FaHome } from "react-icons/fa";
 import Logo from "../assets/Images/Al-Ameen-logo.png";
 import miqdad from "../assets/Images/miqdad.jpg"
 import { Link } from 'react-router-dom';
+import { TiSocialDribbble } from "react-icons/ti";
+import { MdOutlineWebhook } from "react-icons/md";
+
 
 const ServicePage = () => {
   useEffect(()=> {
@@ -45,16 +48,18 @@ const ServicePage = () => {
       <div className='service-hero'>
         
         <div className='service-hero-divs'>
-          <div className='service-hero-box'>
-             <FaHome class="course-icon"/>
+      <Link to="/each-service">
+         <div className='service-hero-box'>
+             <TiSocialDribbble class="course-icon"/>
              <h1>Social Media Marketing</h1>
              <p>Social media marketing, SEO, PPC
                 campaigns, and email marketing to
                 enhance brand visibility, engagement, and
                 conversions</p>
           </div>
+      </Link>   
           <div className='service-hero-box'>
-             <FaHome class="course-icon"/>
+             <MdOutlineWebhook class="course-icon"/>
              <h1>Web Design & Development</h1>
              <p>   Designing user-friendly, SEO-optimized
                   websites that serve as the cornerstone of a

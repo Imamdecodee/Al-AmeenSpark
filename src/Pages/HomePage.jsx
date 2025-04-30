@@ -28,7 +28,7 @@ const HomePage = () => {
           <h4 class="welcome">Welcome To</h4>
           <h1 class="ameen">Al-Ameen Spark</h1>
           <p>Igniting Brands, Sparking Growth</p>
-          <Link to="/each-service"> 
+          <Link to="/request"> 
            <button class="request-btn-hero">Request Service</button>
           </Link>
         </div>
