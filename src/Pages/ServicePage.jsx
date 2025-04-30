@@ -48,7 +48,7 @@ const ServicePage = () => {
       <div className='service-hero'>
         
         <div className='service-hero-divs'>
-      <Link to="/each-service" className='er'>
+      <Link>
          <div className='service-hero-box'>
              <TiSocialDribbble class="course-icon"/>
              <h1>Social Media Marketing</h1>
@@ -58,13 +58,15 @@ const ServicePage = () => {
                 conversions</p>
           </div>
       </Link>   
-          <div className='service-hero-box'>
+         <Link>
+         <div className='service-hero-box'>
              <MdOutlineWebhook class="course-icon"/>
              <h1>Web Design & Development</h1>
              <p>   Designing user-friendly, SEO-optimized
                   websites that serve as the cornerstone of a
                   business’s online presence.</p>
           </div>
+         </Link>
         </div>
 
         <div className='service-hero-divs'>
