@@ -23,7 +23,10 @@ const App = () => {
           <Route path="/service" element={<ServicePage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/request" element={<RequestPage />} />
-          <Route path="/each-service" element={<EachServicePage />} />
+          <Route path="/socialmediamarketing" element={<SocialMediaMarketing />} />
+          <Route path="/webdevelopment" element={<WebDevelopment />} />
+          <Route path="/brandstrategy" element={<BrandStrategy />} />
+          <Route path="/contentmarketing" element={<ContentMarketing />} />
         </Routes>
       </BrowserRouter>
 
