@@ -93,6 +93,7 @@
     align-items: center;
     gap: 10px;
     margin-bottom: 30px;
+    width: 100vw;
   
 }
 .service-hero-divs{
@@ -127,6 +128,10 @@
     margin: 0;
     padding: 0;
 }
+.course-icon{
+    color: #793400;
+    font-size: 1.3rem;
+}
 
 
 
@@ -146,6 +151,18 @@
     }
     .help-para{
         font-size: 1rem;
+    }
+    .service-hero{
+        gap: 1rem !important;
+    }
+    .service-hero-divs{
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1rem !important;
+    }
+    .service-hero-box{
+        width: 80% !important;
+
     }
 }
 
