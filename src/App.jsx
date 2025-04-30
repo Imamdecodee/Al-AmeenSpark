@@ -6,7 +6,10 @@ import AboutPage from './Pages/AboutPage';
 import ServicePage from './Pages/ServicePage';
 import ContactPage from './Pages/ContactPage';
 import RequestPage from './Pages/RequestPage';
-import EachServicePage from './Pages/Each-ServicePage';
+import SocialMediaMarketing from './ServicesPage/SocialMediaMarketing';
+import WebDevelopment from './ServicesPage/WebDevelopment';
+import BrandStrategy from './ServicesPage/BrandStrategy';
+import ContentMarketing from './ServicesPage/ContentMarketing';
 
 
 const App = () => {
@@ -20,7 +23,10 @@ const App = () => {
           <Route path="/service" element={<ServicePage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/request" element={<RequestPage />} />
-          <Route path="/each-service" element={<EachServicePage />} />
+          <Route path="/socialmediamarketing" element={<SocialMediaMarketing />} />
+          <Route path="/webdevelopment" element={<WebDevelopment />} />
+          <Route path="/brandstrategy" element={<BrandStrategy />} />
+          <Route path="/contentmarketing" element={<ContentMarketing />} />
         </Routes>
       </BrowserRouter>
 

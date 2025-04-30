@@ -1,11 +1,11 @@
 import React from 'react'
-import './Each-ServicePage.css'
+import './ServicesStyle.css'
 import NavBar from '../Components/NavBar'
 import Footer from '../Components/Footer'
 import { MdOutlineCallEnd } from "react-icons/md";
 import { Link } from 'react-router-dom';
 
-const RequestPage = () => {
+const SocialMediaMarketing = () => {
   return (
     <section>
 
@@ -18,12 +18,12 @@ const RequestPage = () => {
        <section className='hero-section' >
            <div className='service-side-div' >
               <div className='services-itself'> 
-              <Link to="/each-service"  className='er'>  <p className='each-service'>Social Media Marketing</p> </Link>
-              <Link to="/each-service"  className='er'>  <p className='each-service'>Web Design & Development</p> </Link>
-              <Link to="/each-service"  className='er'>  <p className='each-service'>Brand Strategy and Identity</p> </Link>
-              <Link to="/each-service"  className='er'>  <p className='each-service'>Content Marketing</p> </Link>
-              <Link to="/each-service"  className='er'>  <p className='each-service'>Training and Consulting</p> </Link>
-              <Link to="/each-service"  className='er'>  <p className='each-service'>Community Management and Engagement</p> </Link>
+              <Link to="/socialmediamarketing"  className='er'>  <p className='each-service'>Social Media Marketing</p> </Link>
+              <Link to="/webdevelopment"  className='er'>  <p className='each-service'>Web Design & Development</p> </Link>
+              <Link to="/brandstrategy"  className='er'>  <p className='each-service'>Brand Strategy and Identity</p> </Link>
+              <Link to="/contentmarketing"  className='er'>  <p className='each-service'>Content Marketing</p> </Link>
+              <Link to=""  className='er'>  <p className='each-service'>Training and Consulting</p> </Link>
+              <Link to=""  className='er'>  <p className='each-service'>Community Management and Engagement</p> </Link>
               </div>
              <div className='call-baground'>
               <p>Contact with  <br />us for any <br /> services</p>
@@ -67,4 +67,4 @@ const RequestPage = () => {
   )
 }
 
-export default RequestPage
+export default SocialMediaMarketing

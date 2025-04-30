@@ -48,33 +48,40 @@ const ServicePage = () => {
       <div className='service-hero'>
         
         <div className='service-hero-divs'>
-      <Link to="/each-service" className='er'>
-         <div className='service-hero-box'>
-             <TiSocialDribbble class="course-icon"/>
-             <h1>Social Media Marketing</h1>
-             <p>Social media marketing, SEO, PPC
-                campaigns, and email marketing to
-                enhance brand visibility, engagement, and
-                conversions</p>
-          </div>
-      </Link>   
-          <div className='service-hero-box'>
-             <MdOutlineWebhook class="course-icon"/>
-             <h1>Web Design & Development</h1>
-             <p>   Designing user-friendly, SEO-optimized
-                  websites that serve as the cornerstone of a
-                  business’s online presence.</p>
-          </div>
+          <Link to="/socialmediamarketing" className='er'>
+              <div className='service-hero-box'>
+                  <TiSocialDribbble class="course-icon"/>
+                  <h1>Social Media Marketing</h1>
+                  <p>Social media marketing, SEO, PPC
+                    campaigns, and email marketing to
+                    enhance brand visibility, engagement, and
+                    conversions</p>
+              </div>
+          </Link>  
+
+          <Link to="/webdevelopment">
+            <div className='service-hero-box'>
+                <MdOutlineWebhook class="course-icon"/>
+                <h1>Web Design & Development</h1>
+                <p>   Designing user-friendly, SEO-optimized
+                    websites that serve as the cornerstone of a
+                    business’s online presence.
+                </p>
+            </div>
+          </Link>   
         </div>
 
         <div className='service-hero-divs'>
-          <div className='service-hero-box'>
-             <FaHome class="course-icon"/>
-             <h1>Brand Strategy and Identity:</h1>
-             <p>  Crafting unique brand messages, logos,
-                  and visual identities to differentiate clients
-                  from competitors.</p>
-          </div>
+          
+          <Link to="/brandstrategy">
+            <div className='service-hero-box'>
+              <FaHome class="course-icon"/>
+              <h1>Brand Strategy and Identity:</h1>
+              <p>  Crafting unique brand messages, logos,
+                    and visual identities to differentiate clients
+                    from competitors.</p>
+            </div>
+          </Link>
           <div className='service-hero-box'>
              <FaHome class="course-icon"/>
              <h1>Content Marketing</h1>
