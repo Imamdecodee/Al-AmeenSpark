@@ -133,7 +133,13 @@
     font-size: 1.3rem;
 }
 
-
+.team-link{
+    color: #793400;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    width: 25px;
+}
 
 
 

@@ -37,24 +37,17 @@ const Training = () => {
            <div className='service-img-div'>
               <div className='service-img'>.</div>
               <h1>Services Overview</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error <br />
-                accusamus quo ut dolorem tenetur animi, fuga odit iure explicabo <br />
-                rerum incidunt sed impedit quia natus eveniet cupiditate temporibus? Soluta! <br />
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error <br />
-                accusamus quo ut dolorem tenetur animi, fuga odit iure explicabo <br />
-                rerum incidunt sed impedit quia natus eveniet cupiditate temporibus? Soluta!</p>
+              <p>We empower teams, founders, and aspiring marketers with actionable knowledge. Through hands-on training and personalized consulting, we help you build the digital competence to lead your growth journey </p>
               <h1>Work Process</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil laborum harum </p>
               <div className='work-proces-div'>
                 <div className='work-proces-box'>
                   <div className='work-proces-img'></div>
-                  <p>Lorem ipsum dolor sit amet, consectetur <br />  adipisicing elit. Rem doloribus <br /> 
-                    Consectetur neque quod iusto ducimus!</p>
+                  <p> We assess your current skills or business needs through a discovery session.                  !</p>
                 </div>
                 <div className='work-proces-box'>
                   <div className='work-proces-img'></div>
-                  <p>Lorem ipsum dolor sit amet, consectetur  <br /> adipisicing elit.Rem doloribus <br /> 
-                    Consectetur neque quod iusto ducimus !</p>
+                  <p> We design tailored sessions, guides, or workshops to close skill gaps and boost performance.                  !</p>
                 </div>
               </div>
            </div>

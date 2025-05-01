@@ -13,7 +13,7 @@ const BrandStrategy = () => {
 
     <div>
       <main class="header-service-cont">
-        <div className='Each-service-Hero'>Branding Strategy & Identity</div>
+        <div className='Each-service-Hero'>Brand Strategy and Identity</div>
       </main>
        <section className='hero-section' >
            <div className='service-side-div' >
@@ -37,24 +37,20 @@ const BrandStrategy = () => {
            <div className='service-img-div'>
               <div className='service-img'>.</div>
               <h1>Services Overview</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error <br />
-                accusamus quo ut dolorem tenetur animi, fuga odit iure explicabo <br />
-                rerum incidunt sed impedit quia natus eveniet cupiditate temporibus? Soluta! <br />
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error <br />
-                accusamus quo ut dolorem tenetur animi, fuga odit iure explicabo <br />
-                rerum incidunt sed impedit quia natus eveniet cupiditate temporibus? Soluta!</p>
+              <p> Your brand is more than a logo—it’s an experience. We help businesses <br /> 
+                  build authentic, memorable identities that connect with their audience. <br /> 
+                  Our strategy ensures that every brand element speaks the same language—yours!</p>
               <h1>Work Process</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil laborum harum </p>
               <div className='work-proces-div'>
                 <div className='work-proces-box'>
                   <div className='work-proces-img'></div>
-                  <p>Lorem ipsum dolor sit amet, consectetur <br />  adipisicing elit. Rem doloribus <br /> 
-                    Consectetur neque quod iusto ducimus!</p>
+                  <p> We discover your brand voice, mission, and 
+                   values through a strategic consultation. </p>
                 </div>
                 <div className='work-proces-box'>
                   <div className='work-proces-img'></div>
-                  <p>Lorem ipsum dolor sit amet, consectetur  <br /> adipisicing elit.Rem doloribus <br /> 
-                    Consectetur neque quod iusto ducimus !</p>
+                  <p> We design and align your visual and communication assets for consistent brand impact.</p>
                 </div>
               </div>
            </div>

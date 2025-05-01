@@ -37,24 +37,19 @@ const CommunityManagement = () => {
            <div className='service-img-div'>
               <div className='service-img'>.</div>
               <h1>Services Overview</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error <br />
-                accusamus quo ut dolorem tenetur animi, fuga odit iure explicabo <br />
-                rerum incidunt sed impedit quia natus eveniet cupiditate temporibus? Soluta! <br />
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error <br />
-                accusamus quo ut dolorem tenetur animi, fuga odit iure explicabo <br />
-                rerum incidunt sed impedit quia natus eveniet cupiditate temporibus? Soluta!</p>
+              <p> Loyal communities are built—not found. We help brands foster meaningful relationships
+                  with their audience through intentional engagement, moderation, and value-driven 
+                  interactions that build trust and loyalty. </p>
               <h1>Work Process</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil laborum harum </p>
               <div className='work-proces-div'>
                 <div className='work-proces-box'>
                   <div className='work-proces-img'></div>
-                  <p>Lorem ipsum dolor sit amet, consectetur <br />  adipisicing elit. Rem doloribus <br /> 
-                    Consectetur neque quod iusto ducimus!</p>
+                  <p> We establish your brand’s voice and community goals to build an engagement plan.              </p>
                 </div>
                 <div className='work-proces-box'>
                   <div className='work-proces-img'></div>
-                  <p>Lorem ipsum dolor sit amet, consectetur  <br /> adipisicing elit.Rem doloribus <br /> 
-                    Consectetur neque quod iusto ducimus !</p>
+                  <p> We manage interactions, spark conversations, and ensure your community stays active and connected.</p>
                 </div>
               </div>
            </div>

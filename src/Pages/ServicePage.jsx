@@ -59,7 +59,7 @@ const ServicePage = () => {
               </div>
           </Link>  
 
-          <Link to="/webdevelopment">
+          <Link to="/webdevelopment" className='er'>
             <div className='service-hero-box'>
                 <MdOutlineWebhook class="course-icon"/>
                 <h1>Web Design & Development</h1>
@@ -73,7 +73,7 @@ const ServicePage = () => {
 
         <div className='service-hero-divs'>
           
-          <Link to="/brandstrategy">
+          <Link to="/brandstrategy" className='er'>
             <div className='service-hero-box'>
               <FaHome class="course-icon"/>
               <h1>Brand Strategy and Identity:</h1>
@@ -83,7 +83,7 @@ const ServicePage = () => {
             </div>
           </Link>
 
-          <Link to="/contentmarketing">
+          <Link to="/contentmarketing" className='er'>
             <div className='service-hero-box'>
               <FaHome class="course-icon"/>
               <h1>Content Marketing</h1>
@@ -97,7 +97,7 @@ const ServicePage = () => {
 
         <div className='service-hero-divs'>
 
-          <Link to="/training">
+          <Link to="/training" className='er'>
             <div className='service-hero-box'>
               <FaHome class="course-icon"/>
               <h1>Training and Consulting:</h1>
@@ -107,7 +107,7 @@ const ServicePage = () => {
             </div>
           </Link>
 
-          <Link to="/communitymanagement">
+          <Link to="/communitymanagement" className='er'>
             <div className='service-hero-box'>
               <FaHome class="course-icon"/>
               <h1> Community Management and Engagement</h1>

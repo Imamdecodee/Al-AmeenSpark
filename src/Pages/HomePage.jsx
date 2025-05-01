@@ -7,6 +7,8 @@ import 'aos/dist/aos.css'
 import { FaHome } from "react-icons/fa";
 import CallTag from '../Components/CallTag';
 import { Link } from 'react-router-dom';
+import { FaLinkedin } from "react-icons/fa6";
+import { FaFacebookSquare } from "react-icons/fa";
 
 const HomePage = () => {
   useEffect(()=> {
@@ -35,8 +37,9 @@ const HomePage = () => {
       <section class="help-sec">
         <h1 class="help">How can we help you?</h1>
         <p class="help-para">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit delectus recusandae ex. <br />
-          Adipisci veritatis quis non enim sunt maxime eum!
+         At Al-Ameen Spark, we craft innovative digital marketing solutions tailored to your brand’s unique goals. 
+         Whether you're looking to grow your online presence, engage your audience, or drive measurable results,
+         our expert team is here to bring your vision to life with strategy, creativity, and precision.
         </p>
       </section>    <div className='service-hero'>
         
@@ -99,32 +102,49 @@ const HomePage = () => {
       <div className='meet-the-team-section'>
      <div className='Team-text'>
       <h1>Meet Our Leadership</h1>
-      <p className='text-meet-team'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, adipisci ullam. Itaque
-         quasi quibusdam necessitatibus impedit eius blanditiis ut suscipit nobis tempora, .</p>
+      <p className='text-meet-team'> Behind every successful strategy is a team that leads with purpose. Our
+         leadership team brings a wealth of experience, vision, and passion for excellence. Get to know the minds 
+         driving Al-Ameen Spark’s mission to revolutionize the digital space and empower brands to thrive.</p>
      </div>
      <div className='picture-divs'>
            <div className='picture-box'>
              <div className='team-pics' > </div>  
               <h4>Muhammad Bada</h4>
               <p className='team-position'>Founder</p>
+              <div>
+              <Link to="https://www.linkedin.com/in/rejoice-ogine-8b6634285">  <FaFacebookSquare  class="team-link"/></Link>
+              <Link to="https://www.facebook.com/share/1DXsaJPc1c/">      <FaLinkedin  class="team-link"/>   </Link>
+              </div>
            </div>
 
            <div className='picture-box'>
             <div className='team-pics-2'> </div>  
             <h4>  Nafisat Abisola Odedeyi </h4>
             <p className='team-position'>Chief Operating officer </p>
+            <div>
+              <Link to="https://www.facebook.com/share/1DXsaJPc1c/">  <FaFacebookSquare  class="team-link"/></Link>
+              <Link to="https://www.facebook.com/share/1DXsaJPc1c/">      <FaLinkedin  class="team-link"/>   </Link>
+              </div>
            </div>
 
            <div className='picture-box'>
              <div className='team-pics-3'> </div> 
              <h4>   Rejoice Ogine</h4>
               <p className='team-position'>Head of strategy</p>
+              <div>
+              <Link to="https://www.facebook.com/share/1DXsaJPc1c/">  <FaFacebookSquare  class="team-link"/></Link>
+              <Link to="https://www.facebook.com/share/1DXsaJPc1c/">      <FaLinkedin  class="team-link"/>   </Link>
+              </div>
            </div>
 
            <div className='picture-box'>
              <div className='team-pics-4'> </div> 
               <h4> Tim Mary Magdalene </h4>
               <p className='team-position'>Virtual Assistant </p>
+              <div>
+              <Link to="https://www.facebook.com/share/1DXsaJPc1c/">  <FaFacebookSquare  class="team-link"/></Link>
+              <Link to="https://www.facebook.com/share/1DXsaJPc1c/">      <FaLinkedin  class="team-link"/>   </Link>
+              </div>
            </div>
 
      </div>

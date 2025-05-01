@@ -31,11 +31,11 @@ const Footer = () => {
           value-driven solutions.
          </p>
          <div className='icon'>
-           <Link to="/https://www.facebook.com/share/1DXsaJPc1c/">  <FaFacebookSquare  class="page-link"/></Link>
-           <Link to="/https://www.facebook.com/share/1DXsaJPc1c/">    <FaTwitterSquare  class="page-link"/> </Link>
-           <Link to="/https://www.facebook.com/share/1DXsaJPc1c/">      <FaGoogle  class="page-link"/>    </Link>
-           <Link to="/https://www.facebook.com/share/1DXsaJPc1c/">    <FaInstagramSquare  class="page-link"/>  </Link>
-           <Link to="/https://www.facebook.com/share/1DXsaJPc1c/">      <FaLinkedin  class="page-link"/>   </Link>
+           <Link to="https://www.facebook.com/share/1DXsaJPc1c/">  <FaFacebookSquare  class="page-link"/></Link>
+           <Link to="https://www.facebook.com/share/1DXsaJPc1c/">    <FaTwitterSquare  class="page-link"/> </Link>
+           <Link to="https://www.facebook.com/share/1DXsaJPc1c/">      <FaGoogle  class="page-link"/>    </Link>
+           <Link to="https://www.facebook.com/share/1DXsaJPc1c/">    <FaInstagramSquare  class="page-link"/>  </Link>
+           <Link to="https://www.facebook.com/share/1DXsaJPc1c/">      <FaLinkedin  class="page-link"/>   </Link>
          </div>
       </div>
       <div className='company-div'>

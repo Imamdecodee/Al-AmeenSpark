@@ -37,24 +37,21 @@ const SocialMediaMarketing = () => {
            <div className='service-img-div'>
               <div className='service-img'>.</div>
               <h1>Services Overview</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error <br />
-                accusamus quo ut dolorem tenetur animi, fuga odit iure explicabo <br />
-                rerum incidunt sed impedit quia natus eveniet cupiditate temporibus? Soluta! <br />
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error <br />
-                accusamus quo ut dolorem tenetur animi, fuga odit iure explicabo <br />
-                rerum incidunt sed impedit quia natus eveniet cupiditate temporibus? Soluta!</p>
+              <p>We don’t just post—we position. At Al-Ameen Spark, we craft data-driven social <br />
+                 media strategies that attract, engage, and convert. From content <br />
+                 planning to audience growth, we help you build a powerful online presence  <br />
+                 that aligns  with your brand goals. <br />
+              </p>
               <h1>Work Process</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil laborum harum </p>
               <div className='work-proces-div'>
                 <div className='work-proces-box'>
                   <div className='work-proces-img'></div>
-                  <p>Lorem ipsum dolor sit amet, consectetur <br />  adipisicing elit. Rem doloribus <br /> 
-                    Consectetur neque quod iusto ducimus!</p>
+                  <p> We analyze your brand and audience to develop a tailored content and engagement strategy.</p>
                 </div>
                 <div className='work-proces-box'>
                   <div className='work-proces-img'></div>
-                  <p>Lorem ipsum dolor sit amet, consectetur  <br /> adipisicing elit.Rem doloribus <br /> 
-                    Consectetur neque quod iusto ducimus !</p>
+                  <p> We create, schedule, and optimize content while tracking performance for continuous growth. </p>
                 </div>
               </div>
            </div>

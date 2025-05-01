@@ -37,24 +37,17 @@ const WebDevelopment = () => {
            <div className='service-img-div'>
               <div className='service-img'>.</div>
               <h1>Services Overview</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error <br />
-                accusamus quo ut dolorem tenetur animi, fuga odit iure explicabo <br />
-                rerum incidunt sed impedit quia natus eveniet cupiditate temporibus? Soluta! <br />
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error <br />
-                accusamus quo ut dolorem tenetur animi, fuga odit iure explicabo <br />
-                rerum incidunt sed impedit quia natus eveniet cupiditate temporibus? Soluta!</p>
+              <p> Your website is your digital storefront. We build responsive, user-focused websites that reflect your brand and drive results. From idea to launch, we ensure functionality meets aesthetics at every click.        !</p>
               <h1>Work Process</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil laborum harum </p>
               <div className='work-proces-div'>
                 <div className='work-proces-box'>
                   <div className='work-proces-img'></div>
-                  <p>Lorem ipsum dolor sit amet, consectetur <br />  adipisicing elit. Rem doloribus <br /> 
-                    Consectetur neque quod iusto ducimus!</p>
+                  <p> We understand your goals, audience, and design preferences to create a layout strategy.</p>
                 </div>
                 <div className='work-proces-box'>
                   <div className='work-proces-img'></div>
-                  <p>Lorem ipsum dolor sit amet, consectetur  <br /> adipisicing elit.Rem doloribus <br /> 
-                    Consectetur neque quod iusto ducimus !</p>
+                  <p> We design, develop, and test your website for responsiveness, speed, and user experience.                  !</p>
                 </div>
               </div>
            </div>

@@ -21,8 +21,9 @@ const ContactPage = () => {
             <h1 class="contact">Contact Us</h1>
             <h5 class="c-slogan">Contact for Premium Business Services .</h5>
             <p class="para-note">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum et animi consequatur 
-              mollitia dolorum possimus voluptas veritatis molestiae? Asperiores, reiciendis.
+             Ready to take your brand to the next level? Our team is here to deliver top-tier digital
+             marketing services tailored to your needs. Get in touch with us today for personalized 
+             support, strategic insights, and results that speak for themselves.
             </p>
             <Link to="/request"> 
              <button class="request-btn-hero">Request Service</button>
