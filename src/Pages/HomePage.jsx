@@ -100,6 +100,7 @@ const HomePage = () => {
 
 
       <div className='meet-the-team-section'>
+        
      <div className='Team-text'>
       <h1>Meet Our Leadership</h1>
       <p className='text-meet-team'> Behind every successful strategy is a team that leads with purpose. Our

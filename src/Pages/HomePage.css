@@ -230,11 +230,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1.5rem;
+    width: 70vw;
+    text-align: center;
+    margin-top: 2rem;
 }
+.Team-text>h1{
+    margin: 0;
+}
+
 .text-meet-team{
-    margin-top: -20px;
-    width: 40vw;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    margin-top: -1rem;
+    line-height: 1.4rem;
 }
+
 .picture-divs{
     display: flex;
     gap: 12px;
@@ -322,10 +334,19 @@
     .picture-divs{
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        gap: 3rem;
     }
-    .team-pics-3,.team-pics-2,.team-pics{
-        width: 60vw;
+    .team-pics-3,.team-pics-2,.team-pics,.team-pics-4{
+        width: 45vw;
+      }
+      .Team-text{
+        width: 70vw;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+      .text-meet-team{
+        width: 100%;
+        text-align: center;
       }
 }
 
@@ -360,8 +381,12 @@
         width: 65vw;
         height: 60vw;
       }
+    .Team-text{
+        width: 80vw;
+    }
       .text-meet-team{
         margin-top: -20px;
-        width: 63vw;
+        width: 100%;
     }
+   
 }
