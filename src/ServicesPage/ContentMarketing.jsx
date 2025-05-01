@@ -39,7 +39,7 @@ const ContentMarketing = () => {
               <h1>Services Overview</h1>
               <p> Content is the voice of your brand. We help you create meaningful, strategic content that informs, entertains, and converts. From blogs to campaigns, our content marketing is built to tell your story and grow your influence.              </p>
               <h1>Work Process</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil laborum harum </p>
+              <p>Let's work you briefly on how we work </p>
               <div className='work-proces-div'>
                 <div className='work-proces-box'>
                   <div className='work-proces-img'></div>

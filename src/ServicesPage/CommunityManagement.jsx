@@ -41,7 +41,7 @@ const CommunityManagement = () => {
                   with their audience through intentional engagement, moderation, and value-driven 
                   interactions that build trust and loyalty. </p>
               <h1>Work Process</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil laborum harum </p>
+              <p>Let's work you briefly on how we work</p>
               <div className='work-proces-div'>
                 <div className='work-proces-box'>
                   <div className='work-proces-img'></div>

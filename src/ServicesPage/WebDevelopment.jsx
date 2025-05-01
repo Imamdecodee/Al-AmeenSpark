@@ -39,7 +39,7 @@ const WebDevelopment = () => {
               <h1>Services Overview</h1>
               <p> Your website is your digital storefront. We build responsive, user-focused websites that reflect your brand and drive results. From idea to launch, we ensure functionality meets aesthetics at every click.        !</p>
               <h1>Work Process</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil laborum harum </p>
+              <p>Let's work you briefly on how we work </p>
               <div className='work-proces-div'>
                 <div className='work-proces-box'>
                   <div className='work-proces-img'></div>

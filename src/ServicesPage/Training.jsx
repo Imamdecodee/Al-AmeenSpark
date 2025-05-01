@@ -39,7 +39,7 @@ const Training = () => {
               <h1>Services Overview</h1>
               <p>We empower teams, founders, and aspiring marketers with actionable knowledge. Through hands-on training and personalized consulting, we help you build the digital competence to lead your growth journey </p>
               <h1>Work Process</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil laborum harum </p>
+              <p>Let's work you briefly on how we work </p>
               <div className='work-proces-div'>
                 <div className='work-proces-box'>
                   <div className='work-proces-img'></div>
