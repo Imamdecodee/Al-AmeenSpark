@@ -97,6 +97,7 @@ const HomePage = () => {
 
 
       <div className='meet-the-team-section'>
+        
      <div className='Team-text'>
       <h1>Meet Our Leadership</h1>
       <p className='text-meet-team'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, adipisci ullam. Itaque
