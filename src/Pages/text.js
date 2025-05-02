@@ -1,7 +1,7 @@
 onClick={async ()=>{
                 setSub("Submitting...");
                 let obj = {
-                  name,
+                  names,
                   email,
                   message,
                   "contact_sumbit": true

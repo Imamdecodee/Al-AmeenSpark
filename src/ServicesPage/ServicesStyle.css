@@ -44,7 +44,7 @@
 .call-icon{
     height: 20vh;
 }
-.service-img,.SMM-service-img{
+.service-img,.SMM-service-img,.brand-service-img{
     background-image: url(/src/assets/Images/Web\ Design\ &\ Development.jpg);
     background-size: cover;
     border-radius: 20px 3px;
@@ -57,7 +57,9 @@
 .SMM-service-img{
     background-image: url(/src/assets/Images/social\ media.jpg);
 }
-
+.brand-service-img{
+    background-image: url(/src/assets/Images/brand\ identity.jpg);
+}
 .chat-btn-hero{
     text-wrap: nowrap;
     color: #a14600;
@@ -78,7 +80,7 @@
 }
 
 
-.work-proces-img,.SMM-2-proces-img{
+.work-proces-img,.SMM-2-proces-img,.SMM-1-proces-img,.brand-1-proces-img,.brand-2-proces-img{
     background-size: cover;
     border-radius: 20px 3px;
     box-shadow: 0px 0px 30px rgba(78, 51, 1, 0.199);
@@ -96,6 +98,12 @@
 }
 .SMM-1-proces-img{
     background-image: url(/src/assets/Images/social\ media\ marketing\ up.png);
+}
+.brand-1-proces-img{
+    background-image: url(/src/assets/Images/brand.png);
+}
+.brand-2-proces-img{
+    background-image: url(/src/assets/Images/Brand-Marketing-Strategy.jpg);
 }
 
 

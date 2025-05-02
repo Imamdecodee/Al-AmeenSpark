@@ -35,7 +35,7 @@ const BrandStrategy = () => {
              </Link>
            </div>
            <div className='service-img-div'>
-              <div className='service-img'>.</div>
+              <div className='brand-service-img'>.</div>
               <h1>Services Overview</h1>
               <p> Your brand is more than a logo—it’s an experience. We help businesses <br /> 
                   build authentic, memorable identities that connect with their audience. <br /> 
@@ -44,12 +44,12 @@ const BrandStrategy = () => {
               <p>Let's work you briefly on how we work</p>
               <div className='work-proces-div'>
                 <div className='work-proces-box'>
-                  <div className='work-proces-img'></div>
+                  <div className='brand-2-proces-img'></div>
                   <p> We discover your brand voice, mission, and 
                    values through a strategic consultation. </p>
                 </div>
                 <div className='work-proces-box'>
-                  <div className='work-proces-img'></div>
+                  <div className='brand-1-proces-img'></div>
                   <p> We design and align your visual and communication assets for consistent brand impact.</p>
                 </div>
               </div>
