@@ -10,6 +10,23 @@ import CallTag from '../Components/CallTag';
 import { Link } from 'react-router-dom';
 
 const ContactPage = () => {
+  const [name, setName] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [message, setMessage] = React.useState("");
+  const [sub, setSub] = React.useState("Submit");
+  console.log(sub);
+  
+  function handleValueChange(e){
+    setName(e.target.value);    
+  }
+
+  function handleEmailChange(e){
+    setEmail(e.target.value);    
+  }
+
+  function handleMessageChange(e){
+    setMessage(e.target.value);
+  }
   return (
     <section>
       <NavBar />
@@ -39,12 +56,24 @@ const ContactPage = () => {
           <h1>Book A Strategy Call</h1>
           <div className='map-message'>
 
-            <div className='message'>
-              <input type="text"placeholder='Your Name:' />
-              <input type="email"placeholder='Your Email:' />
-              <input  type="message"placeholder='Your Message:' />
-              <button className='submit-btn'> Submit</button>
-            </div>
+            
+              <form action="http://localhost" method="post">
+                <div className='message'>
+                <input type="text"placeholder='Your Name:' value={name} onChange={(e)=>{
+                  handleValueChange(e);
+                }}/>
+                <input type="email"placeholder='Your Email:' value={email} onChange={(e)=>{
+                  handleEmailChange(e);
+                }}/>
+                <input  type="message"placeholder='Your Message:'  value={message} onChange={(e)=>{
+                  handleMessageChange(e);
+                }} />
+                <input type="hidden" value={true} name='contact_submit' />
+                <button className='submit-btn' type="submit" > Submit </button>
+                </div>
+              </form>
+              
+            
 
             <div className='message-map'></div>
           </div>
