@@ -35,7 +35,7 @@ const SocialMediaMarketing = () => {
              </Link>
            </div>
            <div className='service-img-div'>
-              <div className='service-img'>.</div>
+              <div className='SMM-service-img'>.</div>
               <h1>Services Overview</h1>
               <p>We don’t just post—we position. At Al-Ameen Spark, we craft data-driven social <br />
                  media strategies that attract, engage, and convert. From content <br />
@@ -46,11 +46,11 @@ const SocialMediaMarketing = () => {
               <p>Let's work you briefly on how we work </p>
               <div className='work-proces-div'>
                 <div className='work-proces-box'>
-                  <div className='work-proces-img'></div>
+                  <div className='SMM-2-proces-img'></div>
                   <p> We analyze your brand and audience to develop a tailored content and engagement strategy.</p>
                 </div>
                 <div className='work-proces-box'>
-                  <div className='work-proces-img'></div>
+                  <div className='SMM-2-proces-img'></div>
                   <p> We create, schedule, and optimize content while tracking performance for continuous growth. </p>
                 </div>
               </div>
