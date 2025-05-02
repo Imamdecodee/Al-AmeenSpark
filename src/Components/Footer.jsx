@@ -71,9 +71,14 @@ const Footer = () => {
            <MdPhoneIphone />
           <p>+234 9047-957-855</p>
          </div>
+      
        
-        
-       
+      </div>
+
+      <div className='company-div'>
+        <h1>Legal Policies</h1>
+        <Link class="f-page-link" to="https://docs.google.com/document/d/1nKpxjvpXlHF7SUbRenUYsO6WIqrDZAynkZZ1oPCc1xE/edit?usp=drivesdk">Terms of service</Link>
+        <Link class="f-page-link" to="https://docs.google.com/document/d/1xx77cXwW0_lK9m419PRzGmGT6zm0ixQ3BQ_CjzKxM48/edit?usp=drivesdk">Privacy policy</Link>
       </div>
     </div>
     <div className='copyright'>

@@ -59,13 +59,13 @@ const ContactPage = () => {
             
               <form action="http://localhost" method="post">
                 <div className='message'>
-                <input type="text"placeholder='Your Name:' value={name} onChange={(e)=>{
+                <input type="text"placeholder='Your Name:' value={name} name='name' onChange={(e)=>{
                   handleValueChange(e);
                 }}/>
-                <input type="email"placeholder='Your Email:' value={email} onChange={(e)=>{
+                <input type="email"placeholder='Your Email:' value={email} name="email" onChange={(e)=>{
                   handleEmailChange(e);
                 }}/>
-                <input  type="message"placeholder='Your Message:'  value={message} onChange={(e)=>{
+                <input  type="message"placeholder='Your Message:' name="message" value={message} onChange={(e)=>{
                   handleMessageChange(e);
                 }} />
                 <input type="hidden" value={true} name='contact_submit' />
