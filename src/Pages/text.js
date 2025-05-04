@@ -1,10 +1,11 @@
-onClick={async ()=>{
+
+       onClick={async ()=>{
                 setSub("Submitting...");
                 let obj = {
                   names,
                   email,
                   message,
-                  "contact_sumbit": true
+                  "contact_sumbit": true 
                 }
 
                 const url = new URL("http://localhost");
@@ -24,4 +25,5 @@ onClick={async ()=>{
                 }
 
                 console.error(data);
-              }}
+
+          }};

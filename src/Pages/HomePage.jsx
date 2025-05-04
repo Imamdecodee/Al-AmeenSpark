@@ -137,17 +137,7 @@ const HomePage = () => {
               <Link to="https://www.facebook.com/share/1DXsaJPc1c/">      <FaLinkedin  class="team-link"/>   </Link>
               </div>
            </div>
-
-           <div className='picture-box'>
-             <div className='team-pics-4'> </div> 
-              <h4> Tim Mary Magdalene </h4>
-              <p className='team-position'>Virtual Assistant </p>
-              <div>
-              <Link to="https://www.facebook.com/share/1DXsaJPc1c/">  <FaFacebookSquare  class="team-link"/></Link>
-              <Link to="https://www.facebook.com/share/1DXsaJPc1c/">      <FaLinkedin  class="team-link"/>   </Link>
-              </div>
-           </div>
-
+           
      </div>
 
    </div>

@@ -79,6 +79,9 @@ const Footer = () => {
         <h1>Legal Policies</h1>
         <Link class="f-page-link" to="https://docs.google.com/document/d/1nKpxjvpXlHF7SUbRenUYsO6WIqrDZAynkZZ1oPCc1xE/edit?usp=drivesdk">Terms of service</Link>
         <Link class="f-page-link" to="https://docs.google.com/document/d/1xx77cXwW0_lK9m419PRzGmGT6zm0ixQ3BQ_CjzKxM48/edit?usp=drivesdk">Privacy policy</Link>
+        <Link class="f-page-link" to="https://docs.google.com/document/d/1ceblBfpRwGjYDCV_MK-DDKvf7Ov07TuoQAQAF-3wmaE/edit?usp=drivesdk">Copy Right Policy</Link>
+        <Link class="f-page-link" to="https://docs.google.com/document/d/1pcx3kfQyiDqvkxHgkeha8zdeIALCBr0Xb9j_wlFtc-o/edit?usp=drivesdk">Refund policy</Link>
+        <Link class="f-page-link" to="https://docs.google.com/document/d/1UGgdEo5EB3sdV4pqf6tAP9Q-HxloaslPmWpL5wp_7AY/edit?usp=drivesdk">Cookie Policy</Link>
       </div>
     </div>
     <div className='copyright'>
