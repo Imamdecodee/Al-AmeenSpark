@@ -57,7 +57,7 @@ const ContactPage = () => {
           <div className='map-message'>
 
             
-              <form action="http://localhost" method="post">
+              <form action="http://alameen-spark.com/reserve.php" method="post">
                 <div className='message'>
                 <input type="text"placeholder='Your Name:' value={name} name='name' onChange={(e)=>{
                   handleValueChange(e);

@@ -60,6 +60,31 @@ const RequestPage = () => {
         setdescription(e.target.value);    
       }
 
+
+      function handleSubmit(){
+        
+        const body = {
+          fullname,
+          email,
+          time,
+          service,
+          mobile,
+          date,
+          endtime,
+          description
+        };
+
+        const options = {
+          headers: {
+            "Content-Type"  : "application/json"
+          },
+          body: JSON.stringify(body),
+          method:"post"
+        };
+
+        fetch("http://alameen-spark.com/reserve.php", options);
+      }
+
   return (
     <section>
 
@@ -76,7 +101,7 @@ const RequestPage = () => {
       <h1>RESERVE A SERVICE</h1>
       <p>CALL US +234 917-957-855 OR COMPLETE THE FORM BELOW</p>
     </div>
-   <form action="http://localhost" method="post">
+   <form action="http://alameen-spark.com/reserve.php" method="post">
     <section class="reserve-sec">
       <main class="res-cont">
 
@@ -205,13 +230,13 @@ const RequestPage = () => {
 
     <div class="description-slot">
             <h1 >Description</h1>
-            <div class="description-box">
-              <input type="message" placeholder='type here___'  value={description} name='description' onChange={(e)=>{
+            <div >
+              <textarea class="description-box" type="message" placeholder='type here___'  value={description} name='description' onChange={(e)=>{
                   handledescriptionChange(e);
                 }}  />
             </div>
      </div>
-     <button className='book-btn' type="submit" > Book Your Service Now </button>
+     <button className='book-btn' type="submit" onClick={handleSubmit} > Book Your Service Now </button>
      </form>
      
     <Footer/>

@@ -20,15 +20,10 @@ const Footer = () => {
       <div className='logo-side'>
         <img className='Logo-footer' src= {Logo} alt="" />
         <p className='Logo-footer-text'>
-            Al-Ameen Spark is a dynamic digital
-          marketing agency based in Ilorin, Nigeria,
-          but offer service in a entire world and that
-          why weoperate romotely,dedicated to
-          helping businesses of all sizes succeed in
-          the digital world. Our team of creative
-          experts, strategists, and developers work
-          collaboratively to deliver innovative,
-          value-driven solutions.
+          ilm-Nexus Digital Skills is branch of ilm-nexus Comapany 
+          Empowering Young People with Market-Ready Digital Skills 
+          We Build ,
+
          </p>
          <div className='icon'>
            <Link to="https://www.facebook.com/share/1DXsaJPc1c/">  <FaFacebookSquare  class="page-link"/></Link>
@@ -86,7 +81,7 @@ const Footer = () => {
     </div>
     <div className='copyright'>
       <hr class="f-line"/>
-      <p> Copyright @ 2025 Al-Ameen-Spark | Powered by The-Techies</p>
+      <p> Copyright @ 2025 ILM NEXUS | Powered by Ilm Nexus Digital Skills</p>
     </div>
     </div>
    
