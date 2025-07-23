@@ -81,7 +81,7 @@ const PortfolioPage = () => {
             <Link to="/contact" className="pf-cta-primary">
               Get Your Free Audit
             </Link>
-            <Link to="/services" className="pf-cta-secondary">
+            <Link to="/service" className="pf-cta-secondary">
               Explore Services
             </Link>
           </div>

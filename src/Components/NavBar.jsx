@@ -38,7 +38,8 @@ const NavBar = () => {
     { path: "/about", name: "About" },
     { path: "/service", name: "Service" },
     { path: "/portfolio", name: "Portfolio" },
-    { path: "/contact", name: "Contact" }
+    { path: "/contact", name: "Contact" },
+    { path: "/event", name: "Event" }
   ];
 
   return (
@@ -65,7 +66,7 @@ const NavBar = () => {
 
           <div className="nav-cta">
             <button className="cta-button">
-             <a href="/request"> Request Service</a>
+             <a href="/login"> Admin</a>
             </button>
           </div>
 

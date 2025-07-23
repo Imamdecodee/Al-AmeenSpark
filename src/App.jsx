@@ -3,6 +3,7 @@ import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './Pages/HomePage'
 import AboutPage from './Pages/AboutPage';
+import LoginPage from './Pages/LoginPage';
 import ServicePage from './Pages/ServicePage';
 import ContactPage from './Pages/ContactPage';
 import RequestPage from './Pages/RequestPage';
@@ -27,10 +28,12 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/service" element={<ServicePage />} />
+          <Route path="/login" element={<LoginPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/request" element={<RequestPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/admindashbord" element={<AdminDashboard />} />
+          <Route path="/admin/login" element={<AdminDashboard />} />
           <Route path="/socialmediamarketing" element={<SocialMediaMarketing />} />
           <Route path="/webdevelopment" element={<WebDevelopment />} />
           <Route path="/brandstrategy" element={<BrandStrategy />} />

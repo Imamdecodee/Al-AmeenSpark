@@ -133,8 +133,8 @@ const HomePage = () => {
             <Link to="/contact" className="cta-primary">
               Get Started Today
             </Link>
-            <Link to="/service" className="cta-secondary">
-              Explore Services
+            <Link to="/request" className="cta-secondary">
+              Request Service
             </Link>
           </div>
         </div>
@@ -190,7 +190,7 @@ const HomePage = () => {
                   <FaRegLightbulb className="stats-icon" />
                   <span>{service.stats}</span>
                 </div>
-                <Link to="/services" className="service-link">
+                <Link to="/service" className="service-link">
                   Learn More →
                 </Link>
               </div>
