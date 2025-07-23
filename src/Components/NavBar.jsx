@@ -1,55 +1,92 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import './NavBar.css'
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { FiMenu, FiX } from 'react-icons/fi';
+import { RiSparklingFill } from 'react-icons/ri';
 import Logo from "../assets/Images/Al-Ameen-logo.png";
-import { RxHamburgerMenu } from "react-icons/rx";
-import { MdCancelPresentation } from "react-icons/md";
+import './NavBar.css';
 
 const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
 
-  const [mobileNav, setMobileNav] = useState(false);
-    const openMobileNav = () => {
-      setMobileNav(!mobileNav)
+  // Close mobile menu when route changes
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location]);
+
+  // Handle scroll effect
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
     };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Disable body scroll when mobile menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [isOpen]);
+
+  const navItems = [
+    { path: "/", name: "Home" },
+    { path: "/about", name: "About" },
+    { path: "/service", name: "Service" },
+    { path: "/portfolio", name: "Portfolio" },
+    { path: "/contact", name: "Contact" }
+  ];
 
   return (
-    <nav class="nav-bar">
+    <>
+      <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+        <div className="navbar-container">
+          <Link to="/" className="logo-wrapper">
+            <img src={Logo} alt="Al-Ameen Spark" className="logo" />
+          </Link>
 
-        <main class="nav-content">
-            <Link to="/">
-              <img class="logo" src={Logo} alt="Logo" />
-            </Link>
-
-            <div class="nav-pages">
-                <Link class="page-link" to="/">Home</Link>
-
-                <Link class="page-link" to="/about">About</Link>
-
-                <Link class="page-link" to="/service">Service</Link>
-
-                <Link class="page-link" to="/contact">Contact</Link>
-            </div>
-            
-            <div onClick={openMobileNav} class="toggle-icon-box">{ mobileNav ? 
-        (< MdCancelPresentation class="toggle-icon-2"/>) : (<RxHamburgerMenu class="toggle-icon-1"/>) }</div>
-      
-
-      { mobileNav && <div class="side-bar-toggle"
-      data-aos="fade-left"
-      data-aos-duration="1000">
-          <div class="nav-pages-toggle">
-              <Link class="page-link-tgl" to="/">Home</Link>
-
-              <Link class="page-link-tgl" to="/about">About</Link>
-
-              <Link class="page-link-tgl" to="/service">Service</Link>
-
-              <Link class="page-link-tgl" to="/contact">Contact</Link>
+          <div className={`nav-links ${isOpen ? 'active' : ''}`}>
+            {navItems.map((item, index) => (
+              <Link
+                key={index}
+                to={item.path}
+                className={`nav-item ${location.pathname === item.path ? 'active' : ''}`}
+                onClick={() => setIsOpen(false)}
+              >
+                <span className="nav-text">{item.name}</span>
+                <RiSparklingFill className="spark-icon" />
+              </Link>
+            ))}
           </div>
-        </div>}
-      </main>
-    </nav>
-  )
-}
 
-export default NavBar
+          <div className="nav-cta">
+            <button className="cta-button">
+             <a href="/request"> Request Service</a>
+            </button>
+          </div>
+
+          <button 
+            className="mobile-toggle"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label={isOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isOpen}
+          >
+            {isOpen ? <FiX size={28} /> : <FiMenu size={28} />}
+          </button>
+        </div>
+      </nav>
+
+      {/* Mobile menu overlay */}
+      <div 
+        className={`mobile-overlay ${isOpen ? 'active' : ''}`} 
+        onClick={() => setIsOpen(false)}
+      />
+    </>
+  );
+};
+
+export default NavBar;

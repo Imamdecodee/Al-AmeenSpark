@@ -1,154 +1,283 @@
-import React, { useEffect } from 'react'
-import './HomePage.css'
-import NavBar from '../Components/NavBar'
+import React, { useEffect } from 'react';
+import './HomePage.css';
+import NavBar from '../Components/NavBar';
 import Footer from '../Components/Footer';
 import AOS from 'aos';
-import 'aos/dist/aos.css'
-import { FaHome } from "react-icons/fa";
+import 'aos/dist/aos.css';
+import { 
+  FaRocket, 
+  FaChartLine, 
+  FaPalette, 
+  FaPenFancy, 
+  FaChalkboardTeacher, 
+  FaUsers,
+  FaLinkedin, 
+  FaFacebookSquare,
+  FaRegLightbulb,
+  FaTrophy,
+  FaHandshake
+} from "react-icons/fa";
+import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
+import { RiCustomerService2Fill } from "react-icons/ri";
 import CallTag from '../Components/CallTag';
 import { Link } from 'react-router-dom';
-import { FaLinkedin } from "react-icons/fa6";
-import { FaFacebookSquare } from "react-icons/fa";
 
 const HomePage = () => {
-  useEffect(()=> {
-    AOS.init();
-  }, [])
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  }, []);
+
+  const services = [
+    {
+      title: "Social Media Marketing",
+      description: "Data-driven strategies to amplify your brand across platforms with measurable results",
+      icon: <FaRocket className="service-icon" />,
+      stats: "300%+ average engagement increase"
+    },
+    {
+      title: "Web Design & Development",
+      description: "High-performance websites designed for conversions and user experience",
+      icon: <FaChartLine className="service-icon" />,
+      stats: "40% faster load times"
+    },
+    {
+      title: "Brand Strategy",
+      description: "Comprehensive branding that differentiates you in competitive markets",
+      icon: <FaPalette className="service-icon" />,
+      stats: "2x brand recognition"
+    },
+    {
+      title: "Content Marketing",
+      description: "Strategic content that resonates with your audience and drives action",
+      icon: <FaPenFancy className="service-icon" />,
+      stats: "5x more leads"
+    },
+    {
+      title: "Training & Consulting",
+      description: "Empower your team with cutting-edge digital marketing skills",
+      icon: <FaChalkboardTeacher className="service-icon" />,
+      stats: "90% satisfaction rate"
+    },
+    {
+      title: "Community Management",
+      description: "Build loyal brand communities that advocate for your business",
+      icon: <FaUsers className="service-icon" />,
+      stats: "4x retention rates"
+    }
+  ];
+
+  const teamMembers = [
+    {
+      name: "Muhammad Bada",
+      position: "Founder & CEO",
+      expertise: "Digital Strategy",
+      image: "founder.jpg",
+      social: {
+        linkedin: "#",
+        facebook: "#"
+      }
+    },
+    {
+      name: "Nafisat Odedeyi",
+      position: "Chief Operating Officer",
+      expertise: "Operations & Growth",
+      image: "SML.jpg",
+      social: {
+        linkedin: "#",
+        facebook: "#"
+      }
+    },
+    {
+      name: "Rejoice Ogine",
+      position: "Head of Strategy",
+      expertise: "Marketing Innovation",
+      image: "S.E.O.jpg",
+      social: {
+        linkedin: "#",
+        facebook: "#"
+      }
+    }
+  ];
+
+  const stats = [
+    { value: "150+", label: "Clients Served", icon: <FaHandshake /> },
+    { value: "95%", label: "Client Retention", icon: <RiCustomerService2Fill /> },
+    { value: "300%", label: "Average Growth", icon: <FaChartLine /> },
+    { value: "50+", label: "Projects Completed", icon: <FaTrophy /> }
+  ];
+
+  const clients = [
+    "client1.svg", "client2.svg", "client3.svg", "client4.svg", "client5.svg"
+  ];
 
   return (
-    <section>
-
-    <NavBar />
-    <main>
-
-      <div class="header" id="hero-home">
-
-        <div class="hero-cont" data-aos="fade-up" data-aos-duration="3000">
-          <h4 class="welcome">Welcome To</h4>
-          <h1 class="ameen">Al-Ameen Spark</h1>
-          <p>Igniting Brands, Sparking Growth</p>
-          <Link to="/request"> 
-           <button class="request-btn-hero">Request Service</button>
-          </Link>
-        </div>
-
-      </div>
-
-      <section class="help-sec">
-        <h1 class="help">How can we help you?</h1>
-        <p class="help-para">
-         At Al-Ameen Spark, we craft innovative digital marketing solutions tailored to your brand’s unique goals. 
-         Whether you're looking to grow your online presence, engage your audience, or drive measurable results,
-         our expert team is here to bring your vision to life with strategy, creativity, and precision.
-        </p>
-      </section>    <div className='service-hero'>
-        
-        <div className='service-hero-divs'>
-          <div className='service-hero-box'>
-             <FaHome class="course-icon"/>
-             <h1>Social Media Marketing</h1>
-             <p>Social media marketing, SEO, PPC
-                campaigns, and email marketing to
-                enhance brand visibility, engagement, and
-                conversions</p>
-          </div>
-          <div className='service-hero-box'>
-             <FaHome class="course-icon"/>
-             <h1>Web Design & Development</h1>
-             <p>   Designing user-friendly, SEO-optimized
-                  websites that serve as the cornerstone of a
-                  business’s online presence.</p>
+    <div className="homepage">
+      <NavBar />
+      
+      {/* Hero Section */}
+      <section className="hero" id="home">
+        <div className="hero-content" data-aos="fade-up">
+          <h4 className="hero-subtitle">Digital Excellence Starts Here</h4>
+          <h1 className="hero-title">
+            <span className="highlight">Ignite</span> Your Brand's 
+            <span className="highlight"> Digital</span> Potential
+          </h1>
+          <p className="hero-text">
+            Al-Ameen Spark delivers cutting-edge digital marketing solutions that drive 
+            measurable growth and establish market dominance for your brand.
+          </p>
+          <div className="hero-cta">
+            <Link to="/contact" className="cta-primary">
+              Get Started Today
+            </Link>
+            <Link to="/service" className="cta-secondary">
+              Explore Services
+            </Link>
           </div>
         </div>
+        <div className="hero-scroll">
+          <span>Scroll Down</span>
+          <div className="scroll-line"></div>
+        </div>
+      </section>
 
-        <div className='service-hero-divs'>
-          <div className='service-hero-box'>
-             <FaHome class="course-icon"/>
-             <h1>Brand Strategy and Identity:</h1>
-             <p>  Crafting unique brand messages, logos,
-                  and visual identities to differentiate clients
-                  from competitors.</p>
+      {/* Clients Section */}
+      <section className="clients-section">
+        <div className="container">
+          <p className="section-subtitle">Trusted by innovative brands</p>
+          <div className="client-logos">
+            {clients.map((client, index) => (
+              <img 
+                key={index} 
+                src={`/src/assets/clients/${client}`} 
+                alt="Client Logo" 
+                className="client-logo"
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+              />
+            ))}
           </div>
-          <div className='service-hero-box'>
-             <FaHome class="course-icon"/>
-             <h1>Content Marketing</h1>
-             <p>  Delivering high-quality blogs, articles,
-                  videos, and graphic designs to resonate
-                  with target audiences </p>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="services-section" id="services">
+        <div className="container">
+          <div className="section-header" data-aos="fade-up">
+            <h2 className="section-title">Our <span className="highlight">Services</span></h2>
+            <p className="section-description">
+              Comprehensive digital solutions tailored to your business objectives
+            </p>
           </div>
           
-        </div>
-
-        <div className='service-hero-divs'>
-          <div className='service-hero-box'>
-             <FaHome class="course-icon"/>
-             <h1>Training and Consulting:</h1>
-             <p> Providing workshops, team training, and  
-              strategic advice to empower businesses
-              with the skills they need to succeed</p>
+          <div className="services-grid">
+            {services.map((service, index) => (
+              <div 
+                className="service-card" 
+                key={index}
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+              >
+                <div className="service-icon-container">
+                  {service.icon}
+                </div>
+                <h3 className="service-title">{service.title}</h3>
+                <p className="service-description">{service.description}</p>
+                <div className="service-stats">
+                  <FaRegLightbulb className="stats-icon" />
+                  <span>{service.stats}</span>
+                </div>
+                <Link to="/services" className="service-link">
+                  Learn More →
+                </Link>
+              </div>
+            ))}
           </div>
-          <div className='service-hero-box'>
-             <FaHome class="course-icon"/>
-             <h1> Community Management and Engagement</h1>
-             <p> Building and nurturing online
-                 communities to foster brand loyalty and
-                 trust</p>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="stats-section">
+        <div className="container">
+          <div className="stats-grid">
+            {stats.map((stat, index) => (
+              <div 
+                className="stat-card" 
+                key={index}
+                data-aos="fade-up"
+                data-aos-delay={index * 150}
+              >
+                <div className="stat-icon">{stat.icon}</div>
+                <h3 className="stat-value">{stat.value}</h3>
+                <p className="stat-label">{stat.label}</p>
+              </div>
+            ))}
           </div>
         </div>
-        
-      </div>
+      </section>
 
-
-      <div className='meet-the-team-section'>
-        
-     <div className='Team-text'>
-      <h1>Meet Our Leadership</h1>
-      <p className='text-meet-team'> Behind every successful strategy is a team that leads with purpose. Our
-         leadership team brings a wealth of experience, vision, and passion for excellence. Get to know the minds 
-         driving Al-Ameen Spark’s mission to revolutionize the digital space and empower brands to thrive.</p>
-     </div>
-     <div className='picture-divs'>
-           <div className='picture-box'>
-             <div className='team-pics' > </div>  
-              <h4>Muhammad Bada</h4>
-              <p className='team-position'>Founder</p>
-              <div>
-              <Link to="https://www.linkedin.com/in/rejoice-ogine-8b6634285">  <FaFacebookSquare  class="team-link"/></Link>
-              <Link to="https://www.facebook.com/share/1DXsaJPc1c/">      <FaLinkedin  class="team-link"/>   </Link>
+      {/* Team Section */}
+      <section className="team-section" id="team">
+        <div className="container">
+          <div className="section-header" data-aos="fade-up">
+            <h2 className="section-title">Meet Our <span className="highlight">Leadership</span></h2>
+            <p className="section-description">
+              The visionary minds driving digital transformation for our clients
+            </p>
+          </div>
+          
+          <div className="team-grid">
+            {teamMembers.map((member, index) => (
+              <div 
+                className="team-card" 
+                key={index}
+                data-aos="fade-up"
+                data-aos-delay={index * 150}
+              >
+                <div 
+                  className="team-photo"
+                  style={{ backgroundImage: `url(/src/assets/Images/${member.image})` }}
+                ></div>
+                <div className="team-info">
+                  <h3 className="team-name">{member.name}</h3>
+                  <p className="team-position">{member.position}</p>
+                  <p className="team-expertise">{member.expertise}</p>
+                  <div className="team-social">
+                    <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer">
+                      <FaLinkedin className="social-icon" />
+                    </a>
+                    <a href={member.social.facebook} target="_blank" rel="noopener noreferrer">
+                      <FaFacebookSquare className="social-icon" />
+                    </a>
+                  </div>
+                </div>
               </div>
-           </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-           <div className='picture-box'>
-            <div className='team-pics-2'> </div>  
-            <h4>  Nafisat Abisola Odedeyi </h4>
-            <p className='team-position'>Chief Operating officer </p>
-            <div>
-              <Link to="https://www.facebook.com/share/1DXsaJPc1c/">  <FaFacebookSquare  class="team-link"/></Link>
-              <Link to="https://www.facebook.com/share/1DXsaJPc1c/">      <FaLinkedin  class="team-link"/>   </Link>
-              </div>
-           </div>
+      {/* CTA Section */}
+      <section className="cta-section">
+        <div className="container" data-aos="fade-up">
+          <h2 className="cta-title">Ready to Transform Your Digital Presence?</h2>
+          <p className="cta-text">
+            Schedule a free consultation with our team to discuss your project and discover 
+            how we can help your business grow exponentially.
+          </p>
+          <Link to="/contact" className="cta-button">
+            Book Your Free Strategy Session
+          </Link>
+        </div>
+      </section>
 
-           <div className='picture-box'>
-             <div className='team-pics-3'> </div> 
-             <h4>   Rejoice Ogine</h4>
-              <p className='team-position'>Head of strategy</p>
-              <div>
-              <Link to="https://www.facebook.com/share/1DXsaJPc1c/">  <FaFacebookSquare  class="team-link"/></Link>
-              <Link to="https://www.facebook.com/share/1DXsaJPc1c/">      <FaLinkedin  class="team-link"/>   </Link>
-              </div>
-           </div>
-           
-     </div>
+      <CallTag />
+      <Footer />
+    </div>
+  );
+};
 
-   </div>
-
-     
-
-    </main>
-     <CallTag />
-     <Footer />
-    </section>
-  )
-}
-
-export default HomePage
+export default HomePage;

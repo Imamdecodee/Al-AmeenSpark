@@ -1,91 +1,177 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import './Footer.css'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Footer.css';
 import Logo from "../assets/Images/Al-Ameen-logo.png";
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaTwitterSquare } from "react-icons/fa";
-import { FaGoogle } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa6";
-import { MdEmail } from "react-icons/md";
-import { FaPhoneVolume } from "react-icons/fa";
-import { FaHome } from "react-icons/fa";
-import { MdPhoneIphone } from "react-icons/md";
-
+import { 
+  FaFacebookSquare, 
+  FaTwitterSquare, 
+  FaGoogle, 
+  FaInstagramSquare, 
+  FaLinkedin,
+  FaPhoneVolume,
+  FaHome
+} from "react-icons/fa";
+import { MdEmail, MdPhoneIphone } from "react-icons/md";
+import { RiSparklingFill } from "react-icons/ri";
 
 const Footer = () => {
+  const companyLinks = [
+    { path: "/", name: "Home" },
+    { path: "/about", name: "About" },
+    { path: "/service", name: "Service" },
+    { path: "/contact", name: "Contact" }
+  ];
+
+  const businessLinks = [
+    { name: "Project" },
+    { name: "Our Team" },
+    { name: "Facts" },
+    { name: "Customers" }
+  ];
+
+  const legalPolicies = [
+    { 
+      path: "https://docs.google.com/document/d/1nKpxjvpXlHF7SUbRenUYsO6WIqrDZAynkZZ1oPCc1xE/edit?usp=drivesdk", 
+      name: "Terms of service" 
+    },
+    { 
+      path: "https://docs.google.com/document/d/1xx77cXwW0_lK9m419PRzGmGT6zm0ixQ3BQ_CjzKxM48/edit?usp=drivesdk", 
+      name: "Privacy policy" 
+    },
+    { 
+      path: "https://docs.google.com/document/d/1ceblBfpRwGjYDCV_MK-DDKvf7Ov07TuoQAQAF-3wmaE/edit?usp=drivesdk", 
+      name: "Copy Right Policy" 
+    },
+    { 
+      path: "https://docs.google.com/document/d/1pcx3kfQyiDqvkxHgkeha8zdeIALCBr0Xb9j_wlFtc-o/edit?usp=drivesdk", 
+      name: "Refund policy" 
+    },
+    { 
+      path: "https://docs.google.com/document/d/1UGgdEo5EB3sdV4pqf6tAP9Q-HxloaslPmWpL5wp_7AY/edit?usp=drivesdk", 
+      name: "Cookie Policy" 
+    }
+  ];
+
+  const contactInfo = [
+    { icon: <FaHome />, text: "Rt,88 ilorin Kwara state" },
+    { icon: <MdEmail />, text: "info@example.com" },
+    { icon: <FaPhoneVolume />, text: "+234 917-957-855" },
+    { icon: <MdPhoneIphone />, text: "+234 9047-957-855" }
+  ];
+
+  const socialIcons = [
+    { icon: <FaFacebookSquare />, url: "https://www.facebook.com/share/1DXsaJPc1c/" },
+    { icon: <FaTwitterSquare />, url: "https://www.facebook.com/share/1DXsaJPc1c/" },
+    { icon: <FaGoogle />, url: "https://www.facebook.com/share/1DXsaJPc1c/" },
+    { icon: <FaInstagramSquare />, url: "https://www.facebook.com/share/1DXsaJPc1c/" },
+    { icon: <FaLinkedin />, url: "https://www.facebook.com/share/1DXsaJPc1c/" }
+  ];
+
   return (
-  <div className='Footer'>
-    <div className='footer-up'>
-      <div className='logo-side'>
-        <img className='Logo-footer' src= {Logo} alt="" />
-        <p className='Logo-footer-text'>
-          ilm-Nexus Digital Skills is branch of ilm-nexus Comapany 
-          Empowering Young People with Market-Ready Digital Skills 
-          We Build ,
+    <footer className="footer">
+      <div className="footer-content">
+        {/* Brand Column */}
+        <div className="footer-column brand-column">
+          <div className="logo-wrapper">
+            <img src={Logo} alt="Al-Ameen Spark" className="footer-logo" />
+            <div className="logo-text">
+              <span className="logo-main">AL-AMEEN</span>
+              <span className="logo-sub">SPARK</span>
+            </div>
+          </div>
+          <p className="brand-description">
+            ilm-Nexus Digital Skills is branch of ilm-nexus Company 
+            Empowering Young People with Market-Ready Digital Skills
+          </p>
+          <div className="social-icons">
+            {socialIcons.map((social, index) => (
+              <a 
+                key={index} 
+                href={social.url} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="social-icon"
+              >
+                {social.icon}
+                <RiSparklingFill className="sparkle" />
+              </a>
+            ))}
+          </div>
+        </div>
 
-         </p>
-         <div className='icon'>
-           <Link to="https://www.facebook.com/share/1DXsaJPc1c/">  <FaFacebookSquare  class="page-link"/></Link>
-           <Link to="https://www.facebook.com/share/1DXsaJPc1c/">    <FaTwitterSquare  class="page-link"/> </Link>
-           <Link to="https://www.facebook.com/share/1DXsaJPc1c/">      <FaGoogle  class="page-link"/>    </Link>
-           <Link to="https://www.facebook.com/share/1DXsaJPc1c/">    <FaInstagramSquare  class="page-link"/>  </Link>
-           <Link to="https://www.facebook.com/share/1DXsaJPc1c/">      <FaLinkedin  class="page-link"/>   </Link>
-         </div>
-      </div>
-      <div className='company-div'>
-        <h1>Company</h1>
-        <Link class="f-page-link" to="/">Home</Link>
-        <Link class="f-page-link" to="/about">About</Link>
-        <Link class="f-page-link" to="/service">Service</Link>
-        <Link class="f-page-link" to="/contact">Contact</Link>
-      </div>
-      <div className='Bussiness-div'>
-        <h1>Business</h1>
-        <p>Project</p>
-        <p>Our Team</p>
-        <p>Facts</p>
-        <p>Customers</p>
+        {/* Company Links */}
+        <div className="footer-column">
+          <h3 className="column-title">Company</h3>
+          <ul className="footer-links">
+            {companyLinks.map((link, index) => (
+              <li key={index}>
+                <Link to={link.path} className="footer-link">
+                  <RiSparklingFill className="sparkle" />
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Business Links */}
+        <div className="footer-column">
+          <h3 className="column-title">Business</h3>
+          <ul className="footer-links">
+            {businessLinks.map((link, index) => (
+              <li key={index}>
+                <span className="footer-link">
+                  <RiSparklingFill className="sparkle" />
+                  {link.name}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Contact Info */}
+        <div className="footer-column">
+          <h3 className="column-title">Get In Touch</h3>
+          <ul className="contact-info">
+            {contactInfo.map((item, index) => (
+              <li key={index} className="contact-item">
+                <span className="contact-icon">{item.icon}</span>
+                <span>{item.text}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Legal Policies */}
+        <div className="footer-column">
+          <h3 className="column-title">Legal Policies</h3>
+          <ul className="footer-links">
+            {legalPolicies.map((policy, index) => (
+              <li key={index}>
+                <a 
+                  href={policy.path} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="footer-link"
+                >
+                  <RiSparklingFill className="sparkle" />
+                  {policy.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
 
-      <div className='Get-in-touch-div'>
-        <h1>Get In Touch</h1>
-        <div className='git-info'>
-          <FaHome /> 
-          <p>Rt,88 ilorin Kwara state</p>
-         </div>
-         <div className='git-info'>
-          <MdEmail /> 
-          <p>infor@example.cpm</p>
-         </div>
-         <div className='git-info'>
-          <FaPhoneVolume />
-          <p>+234 917-957-855</p>
-         </div>
-         <div className='git-info'>
-           <MdPhoneIphone />
-          <p>+234 9047-957-855</p>
-         </div>
-      
-       
+      {/* Copyright */}
+      <div className="copyright-section">
+        <div className="divider"></div>
+        <p className="copyright-text">
+          Copyright @ 2025 ILM NEXUS | Powered by Ilm Nexus Digital Skills
+        </p>
       </div>
+    </footer>
+  );
+};
 
-      <div className='company-div'>
-        <h1>Legal Policies</h1>
-        <Link class="f-page-link" to="https://docs.google.com/document/d/1nKpxjvpXlHF7SUbRenUYsO6WIqrDZAynkZZ1oPCc1xE/edit?usp=drivesdk">Terms of service</Link>
-        <Link class="f-page-link" to="https://docs.google.com/document/d/1xx77cXwW0_lK9m419PRzGmGT6zm0ixQ3BQ_CjzKxM48/edit?usp=drivesdk">Privacy policy</Link>
-        <Link class="f-page-link" to="https://docs.google.com/document/d/1ceblBfpRwGjYDCV_MK-DDKvf7Ov07TuoQAQAF-3wmaE/edit?usp=drivesdk">Copy Right Policy</Link>
-        <Link class="f-page-link" to="https://docs.google.com/document/d/1pcx3kfQyiDqvkxHgkeha8zdeIALCBr0Xb9j_wlFtc-o/edit?usp=drivesdk">Refund policy</Link>
-        <Link class="f-page-link" to="https://docs.google.com/document/d/1UGgdEo5EB3sdV4pqf6tAP9Q-HxloaslPmWpL5wp_7AY/edit?usp=drivesdk">Cookie Policy</Link>
-      </div>
-    </div>
-    <div className='copyright'>
-      <hr class="f-line"/>
-      <p> Copyright @ 2025 ILM NEXUS | Powered by Ilm Nexus Digital Skills</p>
-    </div>
-    </div>
-   
-  )
-}
-
-export default Footer
+export default Footer;

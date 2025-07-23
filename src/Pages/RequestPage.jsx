@@ -1,247 +1,254 @@
-import React, { useEffect } from 'react'
-import './RequestPage.css'
-import NavBar from '../Components/NavBar'
-import Footer from '../Components/Footer'
+import React, { useEffect } from 'react';
+import './RequestPage.css';
+import NavBar from '../Components/NavBar';
+import Footer from '../Components/Footer';
 import AOS from 'aos';
-import 'aos/dist/aos.css'
-import { MdOutlineTypeSpecimen } from "react-icons/md";
-import { MdOutlineEmail } from "react-icons/md";
-import { MdAccessTime } from "react-icons/md";
-import { FaChevronDown } from "react-icons/fa";
-import { FiPhone } from "react-icons/fi";
-import { HiOutlineCalendarDateRange } from "react-icons/hi2";
-import { BsIncognito } from "react-icons/bs";
-
+import 'aos/dist/aos.css';
+import { MdAccessTime, MdOutlineEmail, MdOutlinePerson } from 'react-icons/md';
+import { FiPhone } from 'react-icons/fi';
+import { BsPeople } from 'react-icons/bs';
+import { FaChevronDown, FaPenFancy } from 'react-icons/fa';
+import { HiOutlineCalendarDateRange } from 'react-icons/hi2';
 
 const RequestPage = () => {
-  useEffect(()=> {
-      AOS.init();
-    }, [])
+  useEffect(() => {
+    AOS.init({ duration: 800 });
+  }, []);
 
-      const [fullname, setName] = React.useState("");
-      const [email, setEmail] = React.useState("");
-      const [time, setTime] = React.useState("");
-      const [service, setService] = React.useState("");
-      const [mobile, setMobile] = React.useState("");
-      const [date, setDate] = React.useState("");
-      const [endtime, setendtime] = React.useState("");
-      const [description, setdescription] = React.useState("");
-      const [guest, setguest] = React.useState("");
-      const [sub, setSub] = React.useState("Submit");
-      console.log(sub);
-      
-      function handleValueChange(e){
-        setName(e.target.value);    
-      }
-    
-      function handleEmailChange(e){
-        setEmail(e.target.value);    
-      }
-    
-      function handleTimeChange(e){
-        setTime (e.target.value); 
-      }
-      function handleServiceChange(e){
-        setService(e.target.value);    
-      }
-      function handleMobileChange(e){
-        setMobile(e.target.value);    
-      }
-      function handledateChange(e){
-        setDate(e.target.value);    
-      }
-      function handleendtimeChange(e){
-        setendtime(e.target.value);    
-      }
-      function handleguestChange(e){
-        setguest(e.target.value);    
-      }
-      function handledescriptionChange(e){
-        setdescription(e.target.value);    
-      }
+  const [formData, setFormData] = React.useState({
+    fullname: "",
+    email: "",
+    time: "",
+    service: "",
+    mobile: "",
+    date: "",
+    endtime: "",
+    description: "",
+    guests: "",
+    package: ""
+  });
 
+  const services = [
+    "Social Media Marketing",
+    "Brand Strategy",
+    "Web Development",
+    "SEO Optimization",
+    "Content Marketing"
+  ];
 
-      function handleSubmit(){
-        
-        const body = {
-          fullname,
-          email,
-          time,
-          service,
-          mobile,
-          date,
-          endtime,
-          description
-        };
+  const packages = [
+    { name: "Starter Package", price: "NGN 50,000" },
+    { name: "Growth Package", price: "NGN 80,000" },
+    { name: "Premium Package", price: "NGN 120,000" }
+  ];
 
-        const options = {
-          headers: {
-            "Content-Type"  : "application/json"
-          },
-          body: JSON.stringify(body),
-          method:"post"
-        };
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
 
-        fetch("http://alameen-spark.com/reserve.php", options);
-      }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Submit logic here
+    console.log("Form submitted:", formData);
+  };
 
   return (
-    <section>
+    <div className="request-page">
+      <NavBar />
 
-    <NavBar/>
+      {/* Hero Section */}
+      <section className="request-hero">
+        <div className="hero-content" data-aos="fade-up">
+          <h1>Service Reservation</h1>
+          <p>Home <span>/ Booking</span></p>
+        </div>
+      </section>
 
-    <main class="header-cont">
-      <div class="head-cont" data-aos="zoom-in-down" data-aos-duration="3000" >
-        <h1 class="reserve">SERVICE RESERVATION</h1>
-        <p class="res-para">Home <span class="bk">/Booking</span></p>
-      </div>
-    </main>
+      {/* Form Section */}
+      <section className="request-form-section">
+        <div className="container">
+          <div className="form-header" data-aos="fade-up">
+            <h2>Reserve a Service</h2>
+            <p>Call us +234 917-957-855 or complete the form below</p>
+          </div>
 
-    <div class="sec-2-cont">
-      <h1>RESERVE A SERVICE</h1>
-      <p>CALL US +234 917-957-855 OR COMPLETE THE FORM BELOW</p>
+          <form onSubmit={handleSubmit}>
+            {/* Personal Info Row */}
+            <div className="form-row" data-aos="fade-up">
+              <div className="input-group">
+                <label>
+                  <MdOutlinePerson className="input-icon" />
+                  Your Name
+                </label>
+                <input
+                  type="text"
+                  name="fullname"
+                  placeholder="Full name"
+                  value={formData.fullname}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+
+              <div className="input-group">
+                <label>
+                  <MdOutlineEmail className="input-icon" />
+                  Email Address
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+            </div>
+
+            {/* Contact Info Row */}
+            <div className="form-row" data-aos="fade-up">
+              <div className="input-group">
+                <label>
+                  <FiPhone className="input-icon" />
+                  Phone Number
+                </label>
+                <input
+                  type="tel"
+                  name="mobile"
+                  placeholder="Mobile number"
+                  value={formData.mobile}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+
+              <div className="input-group">
+                <label>
+                  <BsPeople className="input-icon" />
+                  Number of Guests
+                </label>
+                <input
+                  type="number"
+                  name="guests"
+                  placeholder="Number of attendees"
+                  value={formData.guests}
+                  onChange={handleChange}
+                />
+              </div>
+            </div>
+
+            {/* Service Selection Row */}
+            <div className="form-row" data-aos="fade-up">
+              <div className="input-group">
+                <label>
+                  <FaChevronDown className="input-icon" />
+                  Service Type
+                </label>
+                <select
+                  name="service"
+                  value={formData.service}
+                  onChange={handleChange}
+                  required
+                >
+                  <option value="">Select a service</option>
+                  {services.map((service, index) => (
+                    <option key={index} value={service}>{service}</option>
+                  ))}
+                </select>
+              </div>
+
+              <div className="input-group">
+                <label>
+                  <HiOutlineCalendarDateRange className="input-icon" />
+                  Date
+                </label>
+                <input
+                  type="date"
+                  name="date"
+                  value={formData.date}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+            </div>
+
+            {/* Time Selection Row */}
+            <div className="form-row" data-aos="fade-up">
+              <div className="input-group">
+                <label>
+                  <MdAccessTime className="input-icon" />
+                  Start Time
+                </label>
+                <input
+                  type="time"
+                  name="time"
+                  value={formData.time}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+
+              <div className="input-group">
+                <label>
+                  <MdAccessTime className="input-icon" />
+                  End Time
+                </label>
+                <input
+                  type="time"
+                  name="endtime"
+                  value={formData.endtime}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+            </div>
+
+            {/* Package Selection */}
+            <div className="package-section" data-aos="fade-up">
+              <h3>Select a Package</h3>
+              <div className="package-grid">
+                {packages.map((pkg, index) => (
+                  <div 
+                    key={index}
+                    className={`package-card ${formData.package === pkg.name ? 'selected' : ''}`}
+                    onClick={() => setFormData({...formData, package: pkg.name})}
+                  >
+                    <div className="package-badge"></div>
+                    <div className="package-info">
+                      <p>{pkg.name}</p>
+                      <h4>{pkg.price}</h4>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Description */}
+            <div className="description-group" data-aos="fade-up">
+              <label>
+                <FaPenFancy className="input-icon" />
+                Project Description
+              </label>
+              <textarea
+                name="description"
+                placeholder="Tell us about your project..."
+                value={formData.description}
+                onChange={handleChange}
+              />
+            </div>
+
+            <button type="submit" className="submit-btn" data-aos="fade-up">
+              Book Your Service Now
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <Footer />
     </div>
-   <form action="http://alameen-spark.com/reserve.php" method="post">
-    <section class="reserve-sec">
-      <main class="res-cont">
+  );
+};
 
-        <div class="input-cont-box">
-
-          <div class="input-slot">
-            <p class="label">Your Name</p>
-            <div class="input-box">
-              <input placeholder='full name' type="text"  value={fullname} name='fullname' onChange={(e)=>{
-                  handleValueChange(e);
-                }} />
-              <MdOutlineTypeSpecimen class="input-icon" /> 
-            </div>
-          </div>
-
-          <div class="input-slot">
-            <p class="label">Email Address</p>
-            <div class="input-box">
-              <input placeholder='Enter Email ID' type="email"  value={email} name='email' onChange={(e)=>{
-                  handleEmailChange(e);
-                }}/>
-              <MdOutlineEmail class="input-icon" /> 
-            </div>
-          </div>
-
-          <div class="input-slot">
-            <p class="label">Start Time</p>
-            <div class="input-box">
-              <input placeholder='Pick a Time' type="time"  value={time} name='time' onChange={(e)=>{
-                  handleTimeChange(e);
-                }} />
-              <MdAccessTime class="input-icon" /> 
-            </div>
-          </div>
-
-          <div class="input-slot">
-            <p class="label">Service Type</p>
-            <div class="input-box">
-              <input placeholder='Service' type="text"   value={service} name='service' onChange={(e)=>{
-                  handleServiceChange(e);
-                }}/>
-              <FaChevronDown class="input-icon" /> 
-            </div>
-          </div>
-
-        </div>
-
-
-
-        <div class="input-cont-box">
-
-          <div class="input-slot">
-            <p class="label">Phone Number</p>
-            <div class="input-box">
-              <input placeholder='Mobile' type="text"   value={mobile} name='mobile' onChange={(e)=>{
-                  handleMobileChange(e);
-                }} />
-              <FiPhone class="input-icon" /> 
-            </div>
-          </div>
-
-          <div class="input-slot">
-            <p class="label">Date</p>
-            <div class="input-box">
-              <input placeholder='Pick a date' type="date"    value={date} name='date' onChange={(e)=>{
-                  handledateChange(e);
-                }} />
-              <HiOutlineCalendarDateRange class="input-icon" /> 
-            </div>
-          </div>
-
-          <div class="input-slot">
-            <p class="label">End Time</p>
-            <div class="input-box">
-              <input placeholder='Pick a Time' type="time"   value={endtime} name='endtime' onChange={(e)=>{
-                  handleendTimeChange(e);
-                }}  />
-              <MdAccessTime class="input-icon" /> 
-            </div>
-          </div>
-
-          <div class="input-slot">
-            <p class="label">Guests</p>
-            <div class="input-box">
-              <input placeholder='full name' type="text"   value={guest} name='guest' onChange={(e)=>{
-                  handleguestChange(e);
-                }} />
-              <BsIncognito class="input-icon" /> 
-            </div>
-          </div>
-
-        </div>
-      </main>
-    </section>
-
-    <main class="package-sec">
-
-
-      <div class="package-box">
-        <div class="pack-img"></div>
-        <div class="pack-text-para">
-          <p>Service Package 01</p>
-          <h3>NGN #50,000</h3>
-        </div>
-      </div>
-
-      <div class="package-box">
-        <div class="pack-img"></div>
-        <div class="pack-text-para">
-          <p>Service Package 02</p>
-          <h3>NGN #80,000</h3>
-        </div>
-      </div>
-
-      <div class="package-box">
-        <div class="pack-img"></div>
-        <div class="pack-text-para">
-          <p>Service Package 03</p>
-          <h3>NGN #120,000</h3>
-        </div>
-      </div>
-
-     
-
-    </main>
-
-    <div class="description-slot">
-            <h1 >Description</h1>
-            <div >
-              <textarea class="description-box" type="message" placeholder='type here___'  value={description} name='description' onChange={(e)=>{
-                  handledescriptionChange(e);
-                }}  />
-            </div>
-     </div>
-     <button className='book-btn' type="submit" onClick={handleSubmit} > Book Your Service Now </button>
-     </form>
-     
-    <Footer/>
-    </section>
-  )
-}
-
-export default RequestPage
+export default RequestPage;

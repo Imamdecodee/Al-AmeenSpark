@@ -1,0 +1,461 @@
+/* PortfolioPage.css - Enhanced Styling */
+.pf-container {
+  --pf-primary: #FF6B00;
+  --pf-primary-light: rgba(255, 107, 0, 0.1);
+  --pf-dark: #0A0A0F;
+  --pf-light: #FFFFFF;
+  --pf-light-gray: #F8F8FA;
+  --pf-dark-gray: #7E7E8A;
+  --pf-border-radius: 12px;
+  --pf-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  --pf-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  font-family: 'Poppins', sans-serif;
+  color: var(--pf-dark);
+  background: var(--pf-light);
+  overflow-x: hidden;
+}
+
+/* Hero Section Enhancements */
+.pf-hero {
+  height: 80vh;
+  min-height: 600px;
+  background: linear-gradient(135deg, rgba(10, 10, 15, 0.9) 0%, rgba(255, 107, 0, 0.2) 100%), 
+              url('../assets/Images/Hero.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.pf-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
+}
+
+.pf-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 2rem;
+}
+
+.pf-hero-subtitle {
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--pf-primary);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.pf-hero-title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: white;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.pf-highlight {
+  color: var(--pf-primary);
+  position: relative;
+  display: inline-block;
+}
+
+.pf-highlight::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 107, 0, 0.3);
+  z-index: -1;
+}
+
+.pf-hero-text {
+  color: rgba(255,255,255,0.9);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pf-hero-cta {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.pf-cta-primary, .pf-cta-secondary {
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: var(--pf-transition);
+  font-size: 1rem;
+}
+
+.pf-cta-primary {
+  background: var(--pf-primary);
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 107, 0, 0.4);
+}
+
+.pf-cta-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 107, 0, 0.5);
+}
+
+.pf-cta-secondary {
+  border: 2px solid white;
+  color: white;
+  background: transparent;
+}
+
+.pf-cta-secondary:hover {
+  background: white;
+  color: var(--pf-primary);
+}
+
+/* Case Studies Enhancements */
+.pf-case-studies {
+  padding: 6rem 0;
+  background: white;
+}
+
+.pf-container-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.pf-section-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.pf-section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.pf-section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: var(--pf-primary);
+  border-radius: 2px;
+}
+
+.pf-section-description {
+  font-size: 1.1rem;
+  color: var(--pf-dark-gray);
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.pf-case-studies-grid {
+  display: grid;
+  gap: 4rem;
+}
+
+.pf-case-study-card {
+  background: white;
+  border-radius: var(--pf-border-radius);
+  overflow: hidden;
+  box-shadow: var(--pf-shadow);
+  transition: var(--pf-transition);
+}
+
+.pf-case-study-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.pf-case-media {
+  position: relative;
+  min-height: 350px;
+}
+
+.pf-case-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: var(--pf-transition);
+}
+
+.pf-case-study-card:hover .pf-case-image {
+  transform: scale(1.03);
+}
+
+.pf-case-badge {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  background: var(--pf-primary);
+  color: white;
+  padding: 0.6rem 1.8rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  z-index: 2;
+  box-shadow: 0 4px 15px rgba(255, 107, 0, 0.3);
+}
+
+.pf-case-content {
+  padding: 3rem;
+}
+
+.pf-case-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: var(--pf-dark);
+  line-height: 1.3;
+}
+
+.pf-before-after {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 2.5rem 0;
+}
+
+.pf-challenge, .pf-solution {
+  background: var(--pf-light-gray);
+  padding: 1.8rem;
+  border-radius: var(--pf-border-radius);
+  transition: var(--pf-transition);
+  display: flex;
+  gap: 1rem;
+}
+
+.pf-challenge:hover, .pf-solution:hover {
+  transform: translateY(-5px);
+}
+
+.pf-icon-box {
+  font-size: 1.5rem;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.pf-challenge h4, .pf-solution h4 {
+  font-size: 1.1rem;
+  color: var(--pf-primary);
+  margin-bottom: 0.8rem;
+}
+
+.pf-results-title {
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+  color: var(--pf-dark);
+}
+
+.pf-results-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2.5rem;
+}
+
+.pf-result-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.8rem;
+  color: var(--pf-dark);
+  font-weight: 500;
+  position: relative;
+  padding-left: 1.8rem;
+}
+
+.pf-result-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  background: var(--pf-primary);
+  border-radius: 50%;
+}
+
+.pf-result-icon {
+  color: var(--pf-primary);
+  font-size: 0.9rem;
+}
+
+.pf-testimonial {
+  background: var(--pf-light-gray);
+  padding: 2rem;
+  border-radius: var(--pf-border-radius);
+  margin: 2rem 0;
+  position: relative;
+  border-left: 4px solid var(--pf-primary);
+}
+
+.pf-quote-icon {
+  color: var(--pf-primary-light);
+  font-size: 2.5rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  opacity: 0.3;
+}
+
+.pf-testimonial p {
+  font-style: italic;
+  line-height: 1.7;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1rem;
+}
+
+.pf-testimonial-author {
+  display: block;
+  font-style: normal;
+  font-weight: 600;
+  color: var(--pf-dark);
+}
+
+.pf-service-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--pf-primary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--pf-transition);
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  background: var(--pf-primary-light);
+}
+
+.pf-service-link:hover {
+  gap: 0.8rem;
+  background: rgba(255, 107, 0, 0.2);
+}
+
+.pf-arrow-icon {
+  transition: var(--pf-transition);
+}
+
+.pf-service-link:hover .pf-arrow-icon {
+  transform: translateX(3px);
+}
+
+/* Clients Section Enhancements */
+.pf-clients-section {
+  padding: 6rem 0;
+  background: var(--pf-light-gray);
+}
+
+.pf-clients-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  padding: 2rem 0;
+}
+
+.pf-client-logo-container {
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: var(--pf-transition);
+}
+
+.pf-client-logo-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.pf-client-logo {
+  height: 40px;
+  object-fit: contain;
+  filter: grayscale(100%) contrast(0.5);
+  transition: var(--pf-transition);
+}
+
+.pf-client-logo-container:hover .pf-client-logo {
+  filter: grayscale(0%) contrast(1);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .pf-case-study-card {
+    grid-template-columns: 1fr;
+  }
+  
+  .pf-case-content {
+    padding: 2.5rem;
+  }
+  
+  .pf-hero-title {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .pf-hero {
+    height: 70vh;
+    min-height: 500px;
+  }
+  
+  .pf-hero-title {
+    font-size: 2.4rem;
+  }
+  
+  .pf-section-title {
+    font-size: 2rem;
+  }
+  
+  .pf-before-after {
+    grid-template-columns: 1fr;
+  }
+  
+  .pf-hero-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .pf-hero-title {
+    font-size: 2rem;
+  }
+  
+  .pf-case-title {
+    font-size: 1.6rem;
+  }
+  
+  .pf-client-logo {
+    height: 30px;
+  }
+}
