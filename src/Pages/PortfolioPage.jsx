@@ -11,8 +11,8 @@ import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './PortfolioPage.css';
-import client1 from "../assets/Images/founder.jpg";
-import client2 from "../assets/Images/founder.jpg";
+import client1 from "../assets/Images/social media.jpg";
+import client2 from "../assets/Images/website-design-and-development.png";
 
 const PortfolioPage = () => {
   useEffect(() => {

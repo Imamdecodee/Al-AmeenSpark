@@ -109,8 +109,8 @@ const HomePage = () => {
     { value: "50+", label: "Projects Completed", icon: <FaTrophy /> }
   ];
 
-  const clients = [
-    "client1.svg", "client2.svg", "client3.svg", "client4.svg", "client5.svg"
+  const   clients = [
+    "Client1.png", "Client2.png", "client3.jpg", "client4.png", "client5.png"
   ];
 
   return (
@@ -152,7 +152,7 @@ const HomePage = () => {
             {clients.map((client, index) => (
               <img 
                 key={index} 
-                src={`/src/assets/clients/${client}`} 
+                src={`src/assets/${client}`} 
                 alt="Client Logo" 
                 className="client-logo"
                 data-aos="fade-up"

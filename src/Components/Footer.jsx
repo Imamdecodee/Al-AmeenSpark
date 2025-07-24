@@ -80,8 +80,15 @@ const Footer = () => {
             </div>
           </div>
           <p className="brand-description">
-            ilm-Nexus Digital Skills is branch of ilm-nexus Company 
-            Empowering Young People with Market-Ready Digital Skills
+         Al-Ameen Spark is a dynamic digital
+          marketing agency based in Ilorin, Nigeria,
+          but offer service in a entire world and that
+          why weoperate romotely,dedicated to
+          helping businesses of all sizes succeed in
+          the digital world. Our team of creative
+          experts, strategists, and developers work
+          collaboratively to deliver innovative,
+          value-driven solutions.
           </p>
           <div className="social-icons">
             {socialIcons.map((social, index) => (

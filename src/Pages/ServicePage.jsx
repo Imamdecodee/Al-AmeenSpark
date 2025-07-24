@@ -20,12 +20,12 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './ServicePage.css';
 import Logo from "../assets/Images/Al-Ameen-logo.png";
-import testimonial1 from "../assets/Images/founder.jpg";
-import testimonial2 from "../assets/Images/founder.jpg";
-import client1 from "../assets/Images/founder.jpg";
-import client2 from "../assets/Images/founder.jpg";
-import client3 from "../assets/Images/founder.jpg";
-import client4 from "../assets/Images/founder.jpg";
+import testimonial1 from "../assets/miqdad.jpg";
+import testimonial2 from "../assets/testimonial1.webp";
+import client1 from "../assets/partner1.png";
+import client2 from "../assets/partner2.png";
+import client3 from "../assets/Client2.png";
+import client4 from "../assets/partner3.png";
 
 const ServicePage = () => {
   useEffect(() => {
@@ -125,8 +125,8 @@ const ServicePage = () => {
   const testimonials = [
     {
       quote: "Al-Ameen Spark transformed our social media presence. Our engagement increased by 350% in just 3 months!",
-      name: "Amina Yusuf",
-      position: "CEO, Hijabi Fashion Co.",
+      name: "ImaamDecoder",
+      position: "CEO, ilm-Nexus.",
       image: testimonial1
     },
     {
