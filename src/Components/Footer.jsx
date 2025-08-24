@@ -69,6 +69,54 @@ const Footer = () => {
 
   return (
     <footer className="footer">
+      {/* Newsletter Section */}
+      <div className="newsletter-section">
+        <div className="newsletter-container">
+          <div className="newsletter-content">
+            <h3 className="newsletter-title">Stay Updated with Our Latest News</h3>
+            <p className="newsletter-description">
+              Subscribe to our newsletter for exclusive updates, offers, and insights
+            </p>
+            
+            <form className="newsletter-form">
+              <div className="input-group">
+                <div className="input-wrapper">
+                  <span className="input-icon">
+                    <MdEmail />
+                  </span>
+                  <input 
+                    type="email" 
+                    placeholder="Enter your email" 
+                    className="newsletter-input"
+                    required 
+                  />
+                </div>
+                
+                <div className="input-wrapper">
+                  <span className="input-icon">
+                    <MdPhoneIphone />
+                  </span>
+                  <input 
+                    type="tel" 
+                    placeholder="Phone number (optional)" 
+                    className="newsletter-input"
+                  />
+                </div>
+                
+                <button type="submit" className="subscribe-btn">
+                  Subscribe
+                  <RiSparklingFill className="sparkle" />
+                </button>
+              </div>
+            </form>
+            
+            <p className="newsletter-note">
+              We respect your privacy. Unsubscribe at any time.
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div className="footer-content">
         {/* Brand Column */}
         <div className="footer-column brand-column">
@@ -76,15 +124,11 @@ const Footer = () => {
             <img src={Logo} alt="Al-Ameen Spark" className="footer-logo" />
           </div>
           <p className="brand-description">
-         Al-Ameen Spark is a dynamic digital
-          marketing agency based in Ilorin, Nigeria,
-          but offer service in a entire world and that
-          why weoperate romotely,dedicated to
-          helping businesses of all sizes succeed in
-          the digital world. Our team of creative
-          experts, strategists, and developers work
-          collaboratively to deliver innovative,
-          value-driven solutions.
+            Al-Ameen Spark is a dynamic digital marketing agency based in Ilorin, Nigeria,
+            but offer service in a entire world and that why we operate remotely, dedicated to
+            helping businesses of all sizes succeed in the digital world. Our team of creative
+            experts, strategists, and developers work collaboratively to deliver innovative,
+            value-driven solutions.
           </p>
           <div className="social-icons">
             {socialIcons.map((social, index) => (
@@ -170,7 +214,7 @@ const Footer = () => {
       <div className="copyright-section">
         <div className="divider"></div>
         <p className="copyright-text">
-          Copyright @ 2025 ILM NEXUS | Powered by Ilm Nexus Digital Skills
+          Copyright @ 2025 Al-Ameen-Spark | Powered by Ilm Nexus Digital Skills
         </p>
       </div>
     </footer>

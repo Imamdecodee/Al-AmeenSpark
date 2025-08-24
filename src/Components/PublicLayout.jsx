@@ -10,8 +10,6 @@ const PublicLayout = () => {
       <main className="flex-grow">
         <Outlet />
       </main>
-      <HomePage />
-      <Sidebar />
     </div>
   );
 };
