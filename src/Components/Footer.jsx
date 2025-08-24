@@ -53,8 +53,8 @@ const Footer = () => {
   ];
 
   const contactInfo = [
-    { icon: <FaHome />, text: "Rt,88 ilorin Kwara state" },
-    { icon: <MdEmail />, text: "info@example.com" },
+    { icon: <FaHome />, text: "No,88 ilorin Kwara state" },
+    { icon: <MdEmail />, text: "alameenthespark@gmail.com" },
     { icon: <FaPhoneVolume />, text: "+234 917-957-855" },
     { icon: <MdPhoneIphone />, text: "+234 9047-957-855" }
   ];
@@ -74,10 +74,6 @@ const Footer = () => {
         <div className="footer-column brand-column">
           <div className="logo-wrapper">
             <img src={Logo} alt="Al-Ameen Spark" className="footer-logo" />
-            <div className="logo-text">
-              <span className="logo-main">AL-AMEEN</span>
-              <span className="logo-sub">SPARK</span>
-            </div>
           </div>
           <p className="brand-description">
          Al-Ameen Spark is a dynamic digital

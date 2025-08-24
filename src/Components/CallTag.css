@@ -50,7 +50,7 @@
 .cta-title {
   font-size: 2rem;
   font-weight: 800;
-  color: var(--dark);
+  color: rgb(51, 6, 6) !important;
   margin-bottom: 1rem;
   line-height: 1.3;
 }

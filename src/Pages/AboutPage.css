@@ -1,13 +1,11 @@
 :root {
-  --primary: #FF6B00;
-  --primary-light: rgba(255, 107, 0, 0.1);
-  --secondary: #00D1FF;
-  --dark: #0A0A0F;
-  --darker: #050508;
-  --light: #FFFFFF;
-  --light-gray: #F5F5F7;
-  --gray: #7E7E8A;
-  --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --pf-primary: #FF6B00;
+  --pf-primary-light: rgba(255, 107, 0, 0.1);
+  --pf-dark: #0A0A0F;
+  --pf-light: #FFFFFF;
+  --pf-light-gray: #F8F8FA;
+  --pf-dark-gray: #7E7E8A;
+--shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 /* Base Styles */

@@ -17,6 +17,14 @@ import Training from './ServicesPage/Training';
 import CommunityManagement from './ServicesPage/CommunityManagement';
 import EventPage from './Pages/EventPage';
 import EventDetails from './Pages/EventDetails';
+import Register from './Pages/register';
+import Sidebar from './Components/Sidebar';
+import { ThemeProvider } from './components/ThemeProvider';
+import NewsPage from './Pages/NewsPage';
+import BlogDetail from './Pages/BlogDetail';
+import PublicLayout from './components/PublicLayout';
+import { input } from 'framer-motion/client';
+import { Card } from './Components/ui/card';
 
 
 const App = () => {
@@ -26,13 +34,13 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="sidebar" element={<Sidebar />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/service" element={<ServicePage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/request" element={<RequestPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
-          <Route path="/admindashbord" element={<AdminDashboard />} />
           <Route path="/admin/login" element={<AdminDashboard />} />
           <Route path="/socialmediamarketing" element={<SocialMediaMarketing />} />
           <Route path="/webdevelopment" element={<WebDevelopment />} />
@@ -41,9 +49,29 @@ const App = () => {
           <Route path="/training" element={<Training />} />
           <Route path="/communitymanagement" element={<CommunityManagement />} />
           <Route path="/Event" element={<EventPage/>} />
+          <Route path="/register" element={<Register/>} />
           <Route path="/EventDetails" element={<EventDetails/>} />
          
         </Routes>
+        <ThemeProvider defaultTheme="light" storageKey="marketing-ui-theme">
+  
+        <div className="App">
+          <Routes>
+            {/* Admin Routes */}
+            <Route path="/admindashbord" element={<AdminDashboard />} />
+            
+            {/* Public Routes */}
+            <Route path="/" element={<PublicLayout />}>
+              <Route path="news" element={<NewsPage />} />
+              <Route path="news/:id" element={<BlogDetail />} />
+            </Route>
+            
+            {/* Redirect root to news page or admin login in a real app */}
+            <Route path="/" element={<NewsPage />} />
+          </Routes>
+        </div>
+      
+    </ThemeProvider>
       </BrowserRouter>
 
     </section>

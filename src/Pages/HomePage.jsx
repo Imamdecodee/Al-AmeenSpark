@@ -91,7 +91,7 @@ const HomePage = () => {
       }
     },
     {
-      name: "Rejoice Ogine",
+      name: "Abu Hafs",
       position: "Head of Strategy",
       expertise: "Marketing Innovation",
       image: "S.E.O.jpg",

@@ -25,7 +25,7 @@ const CallTag = () => {
     <div className="cta-card">
       <div className="cta-content">
         <div className="cta-header">
-          <h2 className="cta-title">Ready to Transform Your Digital Presence?</h2>
+          <h2 className="cta-title" >Ready to Transform Your Digital Presence?</h2>
           <p className="cta-subtitle">
             Let's bring your ideas to life with our proven framework:
           </p>

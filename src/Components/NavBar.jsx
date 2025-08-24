@@ -64,11 +64,11 @@ const NavBar = () => {
             ))}
           </div>
 
-          <div className="nav-cta">
+          {/* <div className="nav-cta">
             <button className="cta-button">
              <a href="/login"> Admin</a>
             </button>
-          </div>
+          </div> */}
 
           <button 
             className="mobile-toggle"

@@ -144,7 +144,7 @@ const AboutPage = () => {
             <div className="mission-content" data-aos="fade-right">
               <h2 className="section-title">Our Vision</h2>
               <p className="mission-text">
-                To become the most trusted global partner for digital transformation, 
+                To become the most trusted <br /> global partner for digital transformation, 
                 empowering businesses to thrive in an increasingly digital world through 
                 innovative, ethical, and results-driven marketing solutions.
               </p>
