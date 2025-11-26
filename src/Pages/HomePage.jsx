@@ -131,7 +131,7 @@ const HomePage = () => {
           </p>
           <div className="hero-cta">
             <Link to="/contact" className="cta-primary">
-              Get Started Today
+              Get Started Now
             </Link>
             <Link to="/request" className="cta-secondary">
               Request Service
